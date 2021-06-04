@@ -111,7 +111,7 @@ def get_results():
 
     for file in files:
         load_data(file)
-    
+
 # Get and return browser names
 def get_browsers(name):
     browsers = re.findall(r"_\w*_", name)
@@ -133,8 +133,6 @@ def parse_summary(browsercomb, client):
 
 def parse_raw(browsercomb, client):
     parse_stats_array(browsercomb, client)
-    # TODO parse time
-    # parse_time(browsercomb)
 
 def parse_stats_array(browsercomb, client):
     audio_packets_sent = audio_packets_lost = video_packets_sent = video_packets_lost = 0
@@ -142,6 +140,7 @@ def parse_stats_array(browsercomb, client):
 
     with open(tests[browsercomb][client]['stats-raw']) as results_file:
             data = json.load(results_file)
+            timestamps = []
 
             for stats in data['StatsArray']:
                 cnt = 0
@@ -163,18 +162,15 @@ def parse_stats_array(browsercomb, client):
                         tests[browsercomb][client]['video']['packets_lost'].append(float(value['packetsLost']))
                         tests[browsercomb][client]['video']['jitter'].append(float(value['jitter']))
                         tests[browsercomb][client]['video']['framesDecoded'].append(int(value['framesDecoded']))
-                        if len(tests[browsercomb][client]['timestamp']) == 0:
-                            tests[browsercomb][client]['timestamp'].append(float(value['timestamp']))
-                        else:
-                            if len(tests[browsercomb][client]['timestamp']) == 1:
-                                tests[browsercomb][client]['timestamp'].append(0.0 + 
-                                (float(value['timestamp']) - tests[browsercomb][client]['timestamp'][len(tests[browsercomb][client]['timestamp']) - 1])/1000)
-                            else:
-                                tests[browsercomb][client]['timestamp'].append(tests[browsercomb][client]['timestamp'][len(tests[browsercomb][client]['timestamp']) - 1] + 
-                                (float(value['timestamp']) - tests[browsercomb][client]['timestamp'][len(tests[browsercomb][client]['timestamp']) - 1])/1000)
-
+                        timestamps.append(float(value['timestamp']))
                     cnt+=1
-            tests[browsercomb][client]['timestamp'][0] = 0.0
+            for i in range (len(timestamps)):
+                if i == 0:
+                    tests[browsercomb][client]['timestamp'].append(0.0)
+                else:
+                    difference = (timestamps[i] - timestamps[i - 1]) / 1000
+                    timestamp = tests[browsercomb][client]['timestamp'][i - 1] + difference
+                    tests[browsercomb][client]['timestamp'].append(timestamp)
 
 
 
@@ -186,19 +182,19 @@ def parse_stats_array(browsercomb, client):
     #         for (key, value) in stats['outbound-rtp'].items():
     #             # first value is always for audio
     #             if cnt%2 == 0:
-    #                 audio_packets_sent += int(value['packetsSent']) 
+    #                 audio_packets_sent += int(value['packetsSent'])
     #             # second value is always for video
     #             else:
-    #                 video_packets_sent += int(value['packetsSent']) 
+    #                 video_packets_sent += int(value['packetsSent'])
     #             count_outbound += 1
     #             cnt+=1
     #         cnt = 0
     #         for (key, value) in stats['inbound-rtp'].items():
     #             if cnt%2 == 0:
-    #                 audio_packets_lost += int(value['packetsLost']) 
+    #                 audio_packets_lost += int(value['packetsLost'])
     #             else:
     #                 print(int(value['packetsLost']) )
-    #                 video_packets_lost += int(value['packetsLost']) 
+    #                 video_packets_lost += int(value['packetsLost'])
     #             count_inbound += 1
     #             cnt+=1
 
@@ -206,10 +202,6 @@ def parse_stats_array(browsercomb, client):
     #     tests[browsercomb][client]['video']['packets_lost'] = video_packets_lost/count_inbound
     #     tests[browsercomb][client]['audio']['packets_sent'] = audio_packets_sent/count_outbound
     #     tests[browsercomb][client]['audio']['packets_lost'] = audio_packets_lost/count_inbound
-
-# TODO get time
-# def parse_time(browsercomb):
-    
 
 def plot_rtt():
     client1_values = []
@@ -219,7 +211,7 @@ def plot_rtt():
         names.append(comb)
         client1_values.append(tests[comb]['client1']['rtt'])
         client2_values.append(tests[comb]['client2']['rtt'])
-        
+
 
     plt.bar(names, client1_values, label='client-1')
     plt.bar(names, client2_values, label='client-2')
@@ -234,7 +226,7 @@ def plot_fps():
     client2_values = []
     names = []
     width = 0.32
-    
+
     for comb in tests:
         names.append(comb)
         client1_values.append(int(tests[comb]['client1']['video']['fps']))
@@ -260,32 +252,28 @@ def plot_packets(type1, type2):
     client1_values = []
     client2_values = []
 
-    # TODO remove harcoded x axis with real time values
-    x_values = np.arange(0, len(tests['ch-ch']['client1'][type1][type2])*2, 2)
-
     names = []
     width = 0.32
 
-    # TODO get time
     for comb in tests:
-        plt.plot(x_values, np.array(tests[comb]['client1'][type1][type2]), label=comb)
-    plt.xlabel('time(s)') 
+        plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), label=comb)
+    plt.xlabel('time(s)')
     plt.legend()
 
     if (type1 == 'audio'):
         if (type2 == 'packets_sent'):
             plt.title('Audio Packets Sent')
-            plt.savefig('plots/audio-packets-sent.png', dpi=200) 
-        else: 
+            plt.savefig('plots/audio-packets-sent.png', dpi=200)
+        else:
             plt.title('Audio Packets Lost')
-            plt.savefig('plots/audio-packets-lost.png', dpi=200) 
+            plt.savefig('plots/audio-packets-lost.png', dpi=200)
     else:
         if (type2 == 'packets_sent'):
             plt.title('Video Packets Sent')
-            plt.savefig('plots/video-packets-sent.png', dpi=200) 
+            plt.savefig('plots/video-packets-sent.png', dpi=200)
         else:
             plt.title('Video Packets Lost')
-            plt.savefig('plots/video-packets-lost.png', dpi=200) 
+            plt.savefig('plots/video-packets-lost.png', dpi=200)
     plt.clf()
 
 def plot_jitter(type):
@@ -297,16 +285,16 @@ def plot_jitter(type):
 
     for comb in tests:
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), label=comb)
-    plt.xlabel('time(s)') 
-    plt.ylabel('time(ms)')
+    plt.xlabel('time(s)')
+    plt.ylabel('Average jitter (ms)')
     plt.legend()
 
     if type == 'audio':
         plt.title('Audio Jitter')
-        plt.savefig('plots/audio-jitter.png', dpi=200) 
+        plt.savefig('plots/audio-jitter.png', dpi=200)
     else:
         plt.title('Video Jitter')
-        plt.savefig('plots/video-jitter.png', dpi=200) 
+        plt.savefig('plots/video-jitter.png', dpi=200)
     plt.clf()
 
 
@@ -314,35 +302,31 @@ def plot_frames(type):
     client1_values = []
     client2_values = []
 
-    # TODO remove harcoded x axis with real time values
-    x_values = np.arange(0, len(tests['ch-ch']['client1']['video'][type])*2, 2)
-
     names = []
     width = 0.32
 
-    # TODO get time
     for comb in tests:
-        plt.plot(x_values, np.array(tests[comb]['client1']['video'][type]), label=comb)
-    plt.xlabel('time(s)') 
+        plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), label=comb)
+    plt.xlabel('time(s)')
     plt.ylabel('Frames per sec')
     plt.legend()
 
     if (type == 'framesEncoded'):
         plt.title("Frames Encoded")
-        plt.savefig('plots/frames-encoded.png', dpi=200) 
+        plt.savefig('plots/frames-encoded.png', dpi=200)
     else:
         plt.title("Frames Decoded")
-        plt.savefig('plots/frames-decoded.png', dpi=200) 
+        plt.savefig('plots/frames-decoded.png', dpi=200)
 
     plt.clf()
 
-#AVERAGE            
+#AVERAGE
 # def plot_packets(type1, type2):
 #     client1_values = []
 #     client2_values = []
 
 #     # TODO remove harcoded x axis with real time values
-    
+
 #     names = []
 #     width = 0.32
 #     fig = plt.figure()
@@ -358,9 +342,9 @@ def plot_frames(type):
 
 #     # c1 = ax.line(ind+width*1/2, client1_values, width,  label='client-1', color = 'dimgray')
 #     # c2 = ax.line(ind+width*3/2, client2_values, width, label='client-2',  color = 'blue')
-#     ax.set_xlabel('browser combinations') 
+#     ax.set_xlabel('browser combinations')
 #     ax.set_xticks(ind+width)
-#      ax.set_xticklabels(x_values)
+#      ax.set_xticklabels(np.array(tests[comb]['client1']['timestamp']))
 #     ax.legend()
 #      ax.set_ylim(bottom=0)
 #      ax.set_ylim(top=30)
@@ -373,7 +357,7 @@ def plot_frames(type):
 #         if (type2 == 'packets_sent'):
 #             ax.set_title('Audio Packets Sent')
 #             plt.figure(1)
-#         else: 
+#         else:
 #             ax.set_title('Audio Packets Lost')
 #             plt.figure(2)
 #     else:
@@ -383,7 +367,7 @@ def plot_frames(type):
 #         else:
 #             ax.set_title('Video Packets Lost')
 #             plt.figure(4)
-            
+
 
 
 def autolabel(client):
@@ -408,5 +392,3 @@ if __name__ == "__main__":
     plot_jitter('video')
     plot_frames('framesEncoded')
     plot_frames('framesDecoded')
-    
-    plt.show()
