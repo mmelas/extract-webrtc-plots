@@ -4,90 +4,87 @@ import re
 import os
 import matplotlib.pyplot as plt
 import numpy as np
+import statistics
 
-browsers_files = {'ch-ch' : [], 'ch-fi' : [], 'ch-op' :[],
-                  'fi-fi' : [], 'fi-op' : [], 'op-op' :[]}
-
-data_dict = {
-    'client1': {
-        'stats-raw': None,
-        'stats-summary': None,
-        'browser': None,
-        'rtt': 0,
-        'timestamp':  0,
-        'audio': {
-            'packets_sent': 0,
-            'packets_lost': 0,
-            'jitter': 0
-        },
-        'video': {
-            'packets_sent': 0,
-            'packets_lost': 0,
-            'jitter': 0,
-            'frames-encoded': 0,
-            'frames-decoded': 0,
-            'fps': 0
-        },
-    },
-    'client2': {
-        'stats-raw': None,
-        'stats-summary': None,
-        'browser': None,
-        'rtt': 0,
-        'timestamp':  0,
-        'audio': {
-            'packets_sent': 0,
-            'packets_lost': 0,
-            'jitter': 0
-        },
-        'video': {
-            'packets_sent': 0,
-            'packets_lost': 0,
-            'jitter': 0,
-            'frames-encoded': 0,
-            'frames-decoded': 0,
-            'fps': 0
-        },
-    }
-}
 tests = dict(dict(dict()))
-tests['ch-ch'] = dict(dict())
-tests['ch-fi'] = dict(dict())
-tests['ch-op'] = dict(dict())
-tests['fi-fi'] = dict(dict())
-tests['fi-ch'] = dict(dict())
-tests['fi-op'] = dict(dict())
-tests['op-op'] = dict(dict())
-tests['op-fi'] = dict(dict())
-tests['op-ch'] = dict(dict())
+def init_dict():
+        tests['ch-ch'] = dict(dict())
+        tests['ch-fi'] = dict(dict())
+        tests['ch-op'] = dict(dict())
+        tests['fi-fi'] = dict(dict())
+        tests['fi-ch'] = dict(dict())
+        tests['fi-op'] = dict(dict())
+        tests['op-op'] = dict(dict())
+        tests['op-fi'] = dict(dict())
+        tests['op-ch'] = dict(dict())
 
-for comb in tests:
-    tests[comb]['client1'] = dict()
-    tests[comb]['client2'] = dict()
-    tests[comb]['client1']['video'] = dict()
-    tests[comb]['client2']['video'] = dict()
-    tests[comb]['client1']['audio'] = dict()
-    tests[comb]['client2']['audio'] = dict()
-    tests[comb]['client1']['video']['fps'] = 0
-    tests[comb]['client2']['video']['fps'] = 0
-    tests[comb]['client1']['video']['packets_sent'] = []
-    tests[comb]['client2']['video']['packets_sent'] = []
-    tests[comb]['client1']['video']['packets_lost'] = []
-    tests[comb]['client2']['video']['packets_lost'] = []
-    tests[comb]['client1']['audio']['packets_sent'] = []
-    tests[comb]['client2']['audio']['packets_sent'] = []
-    tests[comb]['client1']['audio']['packets_lost'] = []
-    tests[comb]['client2']['audio']['packets_lost'] = []
-    tests[comb]['client1']['video']['framesEncoded'] = []
-    tests[comb]['client1']['video']['framesDecoded'] = []
-    tests[comb]['client2']['video']['framesEncoded'] = []
-    tests[comb]['client2']['video']['framesDecoded'] = []
-    tests[comb]['client1']['timestamp'] = []
-    tests[comb]['client2']['timestamp'] = []
-    tests[comb]['client1']['audio']['jitter'] = []
-    tests[comb]['client1']['video']['jitter'] = []
-    tests[comb]['client2']['audio']['jitter'] = []
-    tests[comb]['client2']['video']['jitter'] = []
+        for comb in tests:
+            tests[comb]['client1'] = dict()
+            tests[comb]['client2'] = dict()
+            tests[comb]['client1']['video'] = dict()
+            tests[comb]['client2']['video'] = dict()
+            tests[comb]['client1']['audio'] = dict()
+            tests[comb]['client2']['audio'] = dict()
+            tests[comb]['client1']['video']['fps'] = 0
+            tests[comb]['client2']['video']['fps'] = 0
+            tests[comb]['client1']['video']['packets_sent'] = []
+            tests[comb]['client2']['video']['packets_sent'] = []
+            tests[comb]['client1']['video']['packets_lost'] = []
+            tests[comb]['client2']['video']['packets_lost'] = []
+            tests[comb]['client1']['audio']['packets_sent'] = []
+            tests[comb]['client2']['audio']['packets_sent'] = []
+            tests[comb]['client1']['audio']['packets_lost'] = []
+            tests[comb]['client2']['audio']['packets_lost'] = []
+            tests[comb]['client1']['video']['frames_encoded'] = []
+            tests[comb]['client1']['video']['frames_decoded'] = []
+            tests[comb]['client2']['video']['frames_encoded'] = []
+            tests[comb]['client2']['video']['frames_decoded'] = []
+            tests[comb]['client1']['timestamp'] = []
+            tests[comb]['client2']['timestamp'] = []
+            tests[comb]['client1']['audio']['jitter'] = []
+            tests[comb]['client1']['video']['jitter'] = []
+            tests[comb]['client2']['audio']['jitter'] = []
+            tests[comb]['client2']['video']['jitter'] = []
+
+std_devs = dict(dict(dict()))
+def init_stdev_dict():
+        std_devs['ch-ch'] = dict(dict())
+        std_devs['ch-fi'] = dict(dict())
+        std_devs['ch-op'] = dict(dict())
+        std_devs['fi-fi'] = dict(dict())
+        std_devs['fi-ch'] = dict(dict())
+        std_devs['fi-op'] = dict(dict())
+        std_devs['op-op'] = dict(dict())
+        std_devs['op-fi'] = dict(dict())
+        std_devs['op-ch'] = dict(dict())
+
+        for comb in std_devs:
+            std_devs[comb]['client1'] = dict()
+            std_devs[comb]['client2'] = dict()
+            std_devs[comb]['client1']['video'] = dict()
+            std_devs[comb]['client2']['video'] = dict()
+            std_devs[comb]['client1']['audio'] = dict()
+            std_devs[comb]['client2']['audio'] = dict()
+            std_devs[comb]['client1']['video']['fps'] = 0
+            std_devs[comb]['client2']['video']['fps'] = 0
+            std_devs[comb]['client1']['video']['packets_sent'] = []
+            std_devs[comb]['client2']['video']['packets_sent'] = []
+            std_devs[comb]['client1']['video']['packets_lost'] = []
+            std_devs[comb]['client2']['video']['packets_lost'] = []
+            std_devs[comb]['client1']['audio']['packets_sent'] = []
+            std_devs[comb]['client2']['audio']['packets_sent'] = []
+            std_devs[comb]['client1']['audio']['packets_lost'] = []
+            std_devs[comb]['client2']['audio']['packets_lost'] = []
+            std_devs[comb]['client1']['video']['frames_encoded'] = []
+            std_devs[comb]['client1']['video']['frames_decoded'] = []
+            std_devs[comb]['client2']['video']['frames_encoded'] = []
+            std_devs[comb]['client2']['video']['frames_decoded'] = []
+            std_devs[comb]['client1']['timestamp'] = []
+            std_devs[comb]['client2']['timestamp'] = []
+            std_devs[comb]['client1']['audio']['jitter'] = []
+            std_devs[comb]['client1']['video']['jitter'] = []
+            std_devs[comb]['client2']['audio']['jitter'] = []
+            std_devs[comb]['client2']['video']['jitter'] = []
 
 
 def load_data(file):
@@ -141,17 +138,21 @@ def parse_stats_array(browsercomb, client):
     with open(tests[browsercomb][client]['stats-raw']) as results_file:
             data = json.load(results_file)
             timestamps = []
+            audio_packets_sent = []
+            video_packets_sent = []
+            frames_encoded = []
+            frames_decoded = []
 
             for stats in data['StatsArray']:
                 cnt = 0
                 for (key, value) in stats['outbound-rtp'].items():
                     # first value is always for audio
                     if cnt%2 == 0: # timeselapsed
-                        tests[browsercomb][client]['audio']['packets_sent'].append(int(value['packetsSent']))
+                        audio_packets_sent.append(int(value['packetsSent']))
                     # second value is always for video
                     else:
-                        tests[browsercomb][client]['video']['packets_sent'].append(int(value['packetsSent']))
-                        tests[browsercomb][client]['video']['framesEncoded'].append(int(value['framesEncoded']))
+                        video_packets_sent.append(int(value['packetsSent']))
+                        frames_encoded.append(int(value['framesEncoded']))
                     cnt+=1
                 cnt = 0
                 for (key, value) in stats['inbound-rtp'].items():
@@ -161,7 +162,7 @@ def parse_stats_array(browsercomb, client):
                     else:
                         tests[browsercomb][client]['video']['packets_lost'].append(float(value['packetsLost']))
                         tests[browsercomb][client]['video']['jitter'].append(float(value['jitter']))
-                        tests[browsercomb][client]['video']['framesDecoded'].append(int(value['framesDecoded']))
+                        frames_decoded.append(int(value['framesDecoded']))
                         timestamps.append(float(value['timestamp']))
                     cnt+=1
             for i in range (len(timestamps)):
@@ -171,8 +172,30 @@ def parse_stats_array(browsercomb, client):
                     difference = (timestamps[i] - timestamps[i - 1]) / 1000
                     timestamp = tests[browsercomb][client]['timestamp'][i - 1] + difference
                     tests[browsercomb][client]['timestamp'].append(timestamp)
+            
+            # Audio/video packets sent
+            for i in range (len(video_packets_sent)):
+                if i == 0:
+                    tests[browsercomb][client]['video']['packets_sent'].append(video_packets_sent[i])
+                    tests[browsercomb][client]['audio']['packets_sent'].append(audio_packets_sent[i])
+                else:
+                    difference_vid = (video_packets_sent[i] - video_packets_sent[i - 1])
+                    tests[browsercomb][client]['video']['packets_sent'].append(difference_vid)
 
+                    difference_audio = (audio_packets_sent[i] - audio_packets_sent[i - 1])
+                    tests[browsercomb][client]['audio']['packets_sent'].append(difference_audio)
+            
+            # Frames encoded/decoded
+            for i in range (len(frames_decoded)):
+                if i == 0:
+                    tests[browsercomb][client]['video']['frames_encoded'].append(frames_encoded[i])
+                    tests[browsercomb][client]['video']['frames_decoded'].append(frames_decoded[i])
+                else:
+                    differerence_frames_enc = (frames_encoded[i] - frames_encoded[i - 1])
+                    tests[browsercomb][client]['video']['frames_encoded'].append(differerence_frames_enc)
 
+                    differerence_frames_dec = (frames_decoded[i] - frames_decoded[i - 1])
+                    tests[browsercomb][client]['video']['frames_decoded'].append(differerence_frames_dec)
 
     # with open(tests[browsercomb][client]['stats-raw']) as results_file:
     #     data = json.load(results_file)
@@ -257,23 +280,57 @@ def plot_packets(type1, type2):
 
     for comb in tests:
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), label=comb)
+
+
     plt.xlabel('time(s)')
+
+    # plt.xticks(np.arange(0, plot_x_limit, step=1))
     plt.legend()
+    plt.xlim([-0.1, plot_x_limit]) #
 
     if (type1 == 'audio'):
         if (type2 == 'packets_sent'):
-            plt.title('Audio Packets Sent')
-            plt.savefig('plots/audio-packets-sent.png', dpi=200)
-        else:
-            plt.title('Audio Packets Lost')
-            plt.savefig('plots/audio-packets-lost.png', dpi=200)
+            plt.title('Audio Packets Sent Per Second')
+            plt.savefig('plots/audio-packets-sent-ps.png', dpi=200)
+        # else:
+        #     plt.title('Audio Packets Lost')
+        #     plt.savefig('plots/audio-packets-lost.png', dpi=200)
     else:
         if (type2 == 'packets_sent'):
-            plt.title('Video Packets Sent')
-            plt.savefig('plots/video-packets-sent.png', dpi=200)
-        else:
-            plt.title('Video Packets Lost')
-            plt.savefig('plots/video-packets-lost.png', dpi=200)
+            plt.title('Video Packets Sent Per Second')
+            plt.savefig('plots/video-packets-sent-ps.png', dpi=200)
+        # else:
+        #     plt.title('Video Packets Lost')
+        #     plt.savefig('plots/video-packets-lost.png', dpi=200)
+    plt.clf()
+
+
+def plot_total_packets_sent(type):
+    client1_values = []
+    client2_values = []
+    names = []
+    width = 0.32
+
+    for comb in tests:
+        names.append(comb)
+        client1_values.append(sum(tests[comb]['client1'][type]['packets_sent']))
+
+                
+    ind = np.arange(len(names))
+    c1 = plt.bar(ind+width, client1_values, width, color = 'blue')
+    plt.xlabel('browser combinations')
+    plt.xticks(ticks=ind+width, labels=names)
+    plt.ylim(bottom=0)
+    autolabel(c1)
+    # plt.ylim(top=)        
+    
+    if (type == 'audio'):
+        plt.title('Total audio packets sent')
+        plt.savefig('plots/total-audio-packets-sent.png', dpi=200)
+    if (type == 'video'):
+        plt.title('Total video packets sent')
+        plt.savefig('plots/total-video-packets-sent.png', dpi=200)
+
     plt.clf()
 
 def plot_jitter(type):
@@ -288,12 +345,13 @@ def plot_jitter(type):
     plt.xlabel('time(s)')
     plt.ylabel('Average jitter (ms)')
     plt.legend()
+    plt.xlim([-0.1, plot_x_limit])
 
     if type == 'audio':
-        plt.title('Audio Jitter')
+        plt.title('Audio Jitter per Second')
         plt.savefig('plots/audio-jitter.png', dpi=200)
     else:
-        plt.title('Video Jitter')
+        plt.title('Video Jitter per Second')
         plt.savefig('plots/video-jitter.png', dpi=200)
     plt.clf()
 
@@ -309,13 +367,14 @@ def plot_frames(type):
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), label=comb)
     plt.xlabel('time(s)')
     plt.ylabel('Frames per sec')
-    plt.legend()
+    plt.legend() # ncol=2 for multi column
+    plt.xlim([-0.1, plot_x_limit])
 
-    if (type == 'framesEncoded'):
-        plt.title("Frames Encoded")
+    if (type == 'frames_encoded'):
+        plt.title("Frames Encoded per Second")
         plt.savefig('plots/frames-encoded.png', dpi=200)
     else:
-        plt.title("Frames Decoded")
+        plt.title("Frames Decoded per Second")
         plt.savefig('plots/frames-decoded.png', dpi=200)
 
     plt.clf()
@@ -373,16 +432,111 @@ def plot_frames(type):
 def autolabel(client):
     for c in client:
         h = c.get_height()
-        plt.text(c.get_x()+c.get_width()/2., 1.05*h, '%d'%int(h),
+        plt.text(c.get_x()+c.get_width()/2., h, '%d'%int(h),
                 ha='center', va='bottom')
 
+def avg_dicts(results):
+     
+    # average timestamps
+    for dict in results:
+        for comb in dict:
+            avg_timestamps = []
+            for j in dict[comb]['client1']['timestamp']:
+                avg_timestamps.append(j)
+            avt = statistics.mean(avg_timestamps)
+            tests[comb]['client1']['timestamp'] = avt
+    
+    # average jitter
+    for dict in results:
+        for comb in dict:
+            avg_video_jitter = []
+            avg_audio_jitter = []
+            for j in dict[comb]['client1']['video']['jitter']:
+                avg_video_jitter.append(j)
+            for j in dict[comb]['client1']['audio']['jitter']:
+                avg_audio_jitter.append(j)
+            avj = statistics.mean(avg_video_jitter)
+            aaj = statistics.mean(avg_audio_jitter)
+            tests[comb]['client1']['video']['jitter'] = avj
+            std_devs[comb]['client1']['video']['jitter'] = statistics.stdev(avg_video_jitter)
+            tests[comb]['client1']['audio']['jitter'] = aaj
+            std_devs[comb]['client1']['audio']['jitter'] = statistics.stdev(avg_audio_jitter)
+
+    
+    # average packets sent
+    for dict in results:
+        for comb in dict:
+            avg_v_packets_sent = []
+            avg_a_packets_sent = []
+            for j in dict[comb]['client1']['video']['packets_sent']:
+                avg_v_packets_sent.append(j)
+            for j in dict[comb]['client1']['audio']['packets_sent']:
+                avg_a_packets_sent.append(j)
+            avs = statistics.mean(avg_v_packets_sent)
+            aas = statistics.mean(avg_a_packets_sent)
+            tests[comb]['client1']['video']['packets_sent'] = avs
+            std_devs[comb]['client1']['video']['packets_sent'] = statistics.stdev(avg_v_packets_sent)
+            tests[comb]['client1']['audio']['packets_sent'] = aas
+            std_devs[comb]['client1']['audio']['packets_sent'] = statistics.stdev(avg_a_packets_sent)
+
+    
+    # average frames
+    for dict in results:
+        avg_fps_c1 = []
+        avg_fps_c2 = []
+        for comb in dict:
+            avg_frames_enc = []
+            avg_frames_dec = []
+            for j in dict[comb]['client1']['video']['frames_encoded']:
+                avg_frames_enc.append(j)
+            for j in dict[comb]['client1']['video']['frames_decoded']:
+                avg_frames_dec.append(j)
+            for j in dict[comb]['client1']['video']['fps']:
+                avg_fps_c1.append(int(j))
+            for j in dict[comb]['client2']['video']['fps']:
+                avg_fps_c2.append(int(j))
+            afe = statistics.mean(avg_frames_enc)
+            afd = statistics.mean(avg_frames_dec)
+            tests[comb]['client1']['video']['frames_encoded'] = afe
+            std_devs[comb]['client1']['video']['frames_encoded'] = statistics.stdev(avg_frames_enc)
+            tests[comb]['client1']['video']['frames_decoded'] = afd
+            std_devs[comb]['client1']['video']['frames_decoded'] = statistics.stdev(avg_frames_dec)
+        afps1 = statistics.mean(avg_fps_c1)
+        afps2 = statistics.mean(avg_fps_c2)
+        tests[comb]['client1']['video']['fps'] = afps1
+        tests[comb]['client2']['video']['fps'] = afps2
+        std_devs[comb]['client1']['video']['fps'] = statistics.stdev(avg_fps_c1)
+        std_devs[comb]['client2']['video']['fps'] = statistics.stdev(avg_fps_c2)
 
 if __name__ == "__main__":
     os.makedirs('plots/', exist_ok=True)
+    results = []
+    
+    # do manually for all run dirs
+    os.chdir("run_1")
+    init_dict()
     get_results()
+    results.append(tests.copy())
+    tests.clear()
 
+    # Reinit dict for avf results
+    init_dict()
+    get_results()
+    results.append(tests.copy())
+    
+    # Reset tests to get averages and then plot it
+    tests.clear()
+    init_dict()
+    init_stdev_dict()
+    avg_dicts(results)
+
+    timestamp_min = []
+    for comb in tests:
+        timestamp_min.append(tests[comb]['client1']['timestamp'][len(tests[comb]['client1']['timestamp'])-1])
+    plot_x_limit = min(timestamp_min)
     # Plotting all results
     # plot_rtt()
+    os.chdir("..")
     plot_fps()
     plot_packets('video', 'packets_sent')
     plot_packets('video', 'packets_lost')
@@ -390,5 +544,7 @@ if __name__ == "__main__":
     plot_packets('audio', 'packets_lost')
     plot_jitter('audio')
     plot_jitter('video')
-    plot_frames('framesEncoded')
-    plot_frames('framesDecoded')
+    plot_frames('frames_encoded')
+    plot_frames('frames_decoded')
+    plot_total_packets_sent('audio')
+    plot_total_packets_sent('video')
