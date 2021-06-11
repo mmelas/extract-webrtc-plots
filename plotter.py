@@ -262,7 +262,7 @@ def plot_fps(combs):
 
     ind = np.arange(len(names))
     c1 = plt.bar(ind+width*1/2, client1_values, width, yerr=client1_errors, align='center', capsize=5, label='client-1', color = 'dimgray')
-    c2 = plt.bar(ind+width*3/2, client2_values, width, yerr = client2_errors, align='center', capsize=5, label='client-2',  color = 'blue')
+    c2 = plt.bar(ind+width*3/2, client2_values, width, yerr = client2_errors, align='center', capsize=5, label='client-2', color = 'blue')
     plt.xlabel('browser combinations')
     plt.xticks(ticks=ind+width, labels=names)
 
@@ -273,7 +273,7 @@ def plot_fps(combs):
 
     autolabel(c1)
     autolabel(c2)
-    plt.savefig(f"plots/fps-{'-'.join(map(str, combs))}.png", dpi=200)
+    plt.savefig(f"plots/fps-{'_'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
@@ -285,9 +285,7 @@ def plot_packets(type1, type2, combs):
     width = 0.32
 
     for comb in combs:
-        plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), label=comb)
-    for comb in combs:
-        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), yerr=std_devs[comb]['client1'][type1][type2], capsize=5)
+        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), yerr=std_devs[comb]['client1'][type1][type2], capsize=5, label=comb)
 
     plt.xlabel('time(s)')
 
@@ -298,14 +296,14 @@ def plot_packets(type1, type2, combs):
     if (type1 == 'audio'):
         if (type2 == 'packets_sent'):
             plt.title('Audio Packets Sent Per Second')
-            plt.savefig(f"plots/audio-packets-sent-ps-{'-'.join(map(str, combs))}.png", dpi=200)
+            plt.savefig(f"plots/audio-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Audio Packets Lost')
         #     plt.savefig('plots/audio-packets-lost.png', dpi=200)
     else:
         if (type2 == 'packets_sent'):
             plt.title('Video Packets Sent Per Second')
-            plt.savefig(f"plots/video-packets-sent-ps-{'-'.join(map(str, combs))}.png", dpi=200)
+            plt.savefig(f"plots/video-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Video Packets Lost')
         #     plt.savefig('plots/video-packets-lost.png', dpi=200)
@@ -334,10 +332,10 @@ def plot_total_packets_sent(type, combs):
     
     if (type == 'audio'):
         plt.title('Total audio packets sent')
-        plt.savefig(f"plots/total-audio-packets-sent-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/total-audio-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
     if (type == 'video'):
         plt.title('Total video packets sent')
-        plt.savefig(f"plots/total-video-packets-sent-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/total-video-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
@@ -349,9 +347,7 @@ def plot_jitter(type, combs):
     width = 0.32
 
     for comb in combs:
-        plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), label=comb)
-    for comb in combs:
-        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), std_devs[comb]['client1'][type]['jitter'], capsize=5)
+        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), std_devs[comb]['client1'][type]['jitter'], capsize=5, label=comb)
 
     plt.xlabel('time(s)')
     plt.ylabel('Average jitter (ms)')
@@ -360,10 +356,10 @@ def plot_jitter(type, combs):
 
     if type == 'audio':
         plt.title('Audio Jitter per Second')
-        plt.savefig(f"plots/audio-jitter-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/audio-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title('Video Jitter per Second')
-        plt.savefig(f"plots/video-jitter-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/video-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
@@ -375,9 +371,7 @@ def plot_frames(type, combs):
     width = 0.32
 
     for comb in combs:
-        plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), label=comb)
-    for comb in combs:
-        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), yerr=std_devs[comb]['client1']['video'][type], capsize=5)
+        plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), yerr=std_devs[comb]['client1']['video'][type], capsize=5, label=comb)
 
     plt.xlabel('time(s)')
     plt.ylabel('Frames per sec')
@@ -386,10 +380,10 @@ def plot_frames(type, combs):
 
     if (type == 'frames_encoded'):
         plt.title("Frames Encoded per Second")
-        plt.savefig(f"plots/frames-encoded-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/frames-encoded-{'_'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title("Frames Decoded per Second")
-        plt.savefig(f"plots/frames-decoded-{'-'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"plots/frames-decoded-{'_'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
