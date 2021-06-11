@@ -245,7 +245,7 @@ def plot_rtt():
     plt.clf()
 
 
-def plot_fps():
+def plot_fps(combs):
     client1_values = []
     client1_errors = []
     client2_values = []
@@ -253,7 +253,7 @@ def plot_fps():
     names = []
     width = 0.32
 
-    for comb in tests:
+    for comb in combs:
         names.append(comb)
         client1_values.append(int(tests[comb]['client1']['video']['fps']))
         client1_errors.append(int(std_devs[comb]['client1']['video']['fps']))
@@ -273,20 +273,20 @@ def plot_fps():
 
     autolabel(c1)
     autolabel(c2)
-    plt.savefig('plots/fps.png', dpi=200)
+    plt.savefig(f"plots/fps-{'-'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
-def plot_packets(type1, type2):
+def plot_packets(type1, type2, combs):
     client1_values = []
     client2_values = []
 
     names = []
     width = 0.32
 
-    for comb in tests:
+    for comb in combs:
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), label=comb)
-    for comb in tests:
+    for comb in combs:
         plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type1][type2]), yerr=std_devs[comb]['client1'][type1][type2], capsize=5)
 
     plt.xlabel('time(s)')
@@ -298,28 +298,28 @@ def plot_packets(type1, type2):
     if (type1 == 'audio'):
         if (type2 == 'packets_sent'):
             plt.title('Audio Packets Sent Per Second')
-            plt.savefig('plots/audio-packets-sent-ps.png', dpi=200)
+            plt.savefig(f"plots/audio-packets-sent-ps-{'-'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Audio Packets Lost')
         #     plt.savefig('plots/audio-packets-lost.png', dpi=200)
     else:
         if (type2 == 'packets_sent'):
             plt.title('Video Packets Sent Per Second')
-            plt.savefig('plots/video-packets-sent-ps.png', dpi=200)
+            plt.savefig(f"plots/video-packets-sent-ps-{'-'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Video Packets Lost')
         #     plt.savefig('plots/video-packets-lost.png', dpi=200)
     plt.clf()
 
 
-def plot_total_packets_sent(type):
+def plot_total_packets_sent(type, combs):
     client1_values = []
     client2_values = []
     client1_errors = []
     names = []
     width = 0.32
 
-    for comb in tests:
+    for comb in combs:
         names.append(comb)
         client1_values.append(sum(tests[comb]['client1'][type]['packets_sent']))
         client1_errors.append(statistics.mean(std_devs[comb]['client1'][type]['packets_sent']))
@@ -334,23 +334,23 @@ def plot_total_packets_sent(type):
     
     if (type == 'audio'):
         plt.title('Total audio packets sent')
-        plt.savefig('plots/total-audio-packets-sent.png', dpi=200)
+        plt.savefig(f"plots/total-audio-packets-sent-{'-'.join(map(str, combs))}.png", dpi=200)
     if (type == 'video'):
         plt.title('Total video packets sent')
-        plt.savefig('plots/total-video-packets-sent.png', dpi=200)
+        plt.savefig(f"plots/total-video-packets-sent-{'-'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
-def plot_jitter(type):
+def plot_jitter(type, combs):
     client1_values = []
     client2_values = []
 
     names = []
     width = 0.32
 
-    for comb in tests:
+    for comb in combs:
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), label=comb)
-    for comb in tests:
+    for comb in combs:
         plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1'][type]['jitter']), std_devs[comb]['client1'][type]['jitter'], capsize=5)
 
     plt.xlabel('time(s)')
@@ -360,23 +360,23 @@ def plot_jitter(type):
 
     if type == 'audio':
         plt.title('Audio Jitter per Second')
-        plt.savefig('plots/audio-jitter.png', dpi=200)
+        plt.savefig(f"plots/audio-jitter-{'-'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title('Video Jitter per Second')
-        plt.savefig('plots/video-jitter.png', dpi=200)
+        plt.savefig(f"plots/video-jitter-{'-'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
-def plot_frames(type):
+def plot_frames(type, combs):
     client1_values = []
     client2_values = []
 
     names = []
     width = 0.32
 
-    for comb in tests:
+    for comb in combs:
         plt.plot(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), label=comb)
-    for comb in tests:
+    for comb in combs:
         plt.errorbar(np.array(tests[comb]['client1']['timestamp']), np.array(tests[comb]['client1']['video'][type]), yerr=std_devs[comb]['client1']['video'][type], capsize=5)
 
     plt.xlabel('time(s)')
@@ -386,10 +386,10 @@ def plot_frames(type):
 
     if (type == 'frames_encoded'):
         plt.title("Frames Encoded per Second")
-        plt.savefig('plots/frames-encoded.png', dpi=200)
+        plt.savefig(f"plots/frames-encoded-{'-'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title("Frames Decoded per Second")
-        plt.savefig('plots/frames-decoded.png', dpi=200)
+        plt.savefig(f"plots/frames-decoded-{'-'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
@@ -532,6 +532,9 @@ def avg_dicts(results):
 if __name__ == "__main__":
     os.makedirs('plots/', exist_ok=True)
     results = []
+    chrome_combs = ['ch-ch', 'ch-fi', 'ch-op']
+    firefox_combs = ['fi-fi', 'fi-ch', 'fi-op']
+    opera_combs = ['op-op', 'op-ch', 'op-fi']
     
     resultdir = glob.glob("results/*")
     for rundir in resultdir:
@@ -558,14 +561,32 @@ if __name__ == "__main__":
     plot_x_limit = min(timestamp_min)
     # Plotting all results
     # plot_rtt()
-    plot_fps()
-    plot_packets('video', 'packets_sent')
+    plot_fps(chrome_combs)
+    plot_fps(firefox_combs)
+    plot_fps(opera_combs)
+    plot_packets('video', 'packets_sent', chrome_combs)
+    plot_packets('video', 'packets_sent', firefox_combs)
+    plot_packets('video', 'packets_sent', opera_combs)
     # plot_packets('video', 'packets_lost') #! don't use, don't record value anymore in averaging
-    plot_packets('audio', 'packets_sent') 
+    plot_packets('audio', 'packets_sent', chrome_combs) 
+    plot_packets('audio', 'packets_sent', firefox_combs) 
+    plot_packets('audio', 'packets_sent', opera_combs) 
     # plot_packets('audio', 'packets_lost') #! don't use, don't record value anymore in averaging
-    plot_jitter('audio')
-    plot_jitter('video')
-    plot_frames('frames_encoded')
-    plot_frames('frames_decoded')
-    plot_total_packets_sent('audio')
-    plot_total_packets_sent('video')
+    plot_jitter('audio', chrome_combs)
+    plot_jitter('audio', firefox_combs)
+    plot_jitter('audio', opera_combs)
+    plot_jitter('video', chrome_combs)
+    plot_jitter('video', firefox_combs)
+    plot_jitter('video', opera_combs)
+    plot_frames('frames_encoded', chrome_combs)
+    plot_frames('frames_encoded', firefox_combs)
+    plot_frames('frames_encoded', opera_combs)
+    plot_frames('frames_decoded', chrome_combs)
+    plot_frames('frames_decoded', firefox_combs)
+    plot_frames('frames_decoded', opera_combs)
+    plot_total_packets_sent('audio', chrome_combs)
+    plot_total_packets_sent('audio', firefox_combs)
+    plot_total_packets_sent('audio', opera_combs)
+    plot_total_packets_sent('video', chrome_combs)
+    plot_total_packets_sent('video', firefox_combs)
+    plot_total_packets_sent('video', opera_combs)
