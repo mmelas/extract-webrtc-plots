@@ -323,7 +323,7 @@ def plot_total_packets_sent(type, combs):
         client1_errors.append(statistics.mean(std_devs[comb]['client1'][type]['packets_sent']))
     
     ind = np.arange(len(names))
-    c1 = plt.bar(ind+width, client1_values, width, yerr=client1_errors, capsize=5, align='center', color = 'blue')
+    c1 = plt.bar(ind+width, client1_values, width, yerr=client1_errors, capsize=5, align='center')
     plt.xlabel('browser combinations')
     plt.xticks(ticks=ind+width, labels=names)
     plt.ylim(bottom=0)
@@ -530,7 +530,7 @@ if __name__ == "__main__":
     firefox_combs = ['fi-fi', 'fi-ch', 'fi-op']
     opera_combs = ['op-op', 'op-ch', 'op-fi']
     
-    resultdir = glob.glob("results/*")
+    resultdir = glob.glob("results/run_*")
     for rundir in resultdir:
         print(f"Checking {rundir}")
         os.chdir(f"{rundir}")
@@ -540,7 +540,7 @@ if __name__ == "__main__":
         tests.clear()
         os.chdir("../..")
 
-    # Reinit dict for avf results
+    # Reinit dict for avg results
     init_dict()
     
     # Reset tests to get averages and then plot it
@@ -584,3 +584,7 @@ if __name__ == "__main__":
     plot_total_packets_sent('video', chrome_combs)
     plot_total_packets_sent('video', firefox_combs)
     plot_total_packets_sent('video', opera_combs)
+
+
+# 1. use ch_op_fail, copied results from fi_op_fail, renamed to run_91
+# 2. use fi_op_fail2, copied from replace_run_ch_op_fail, 
