@@ -7,6 +7,8 @@ import numpy as np
 import statistics
 
 tests = dict(dict(dict()))
+PLOTSDIR = "plots-webcam"
+RESULTSDIR = "results-webcam"
 def init_dict():
         tests['ch-ch'] = dict(dict())
         tests['ch-fi'] = dict(dict())
@@ -101,7 +103,6 @@ def load_data(file):
         parse_summary(browsercomb, 'client2')
         parse_raw(browsercomb, 'client1')
         parse_raw(browsercomb, 'client2')
-
 
 def get_results():
     # getting the result files
@@ -241,7 +242,7 @@ def plot_rtt():
     plt.bar(names, client2_values, label='client-2')
     plt.xlabel('browser combinations')
     plt.legend()
-    plt.savefig('plots/rtt.png', dpi=200)
+    plt.savefig(f"{PLOTSDIR}/rtt.png", dpi=200)
     plt.clf()
 
 
@@ -259,12 +260,13 @@ def plot_fps(combs):
         client1_errors.append(int(std_devs[comb]['client1']['video']['fps']))
         client2_values.append(int(tests[comb]['client2']['video']['fps']))
         client2_errors.append(int(std_devs[comb]['client2']['video']['fps']))
-
+    
     ind = np.arange(len(names))
     c1 = plt.bar(ind+width*1/2, client1_values, width, yerr=client1_errors, align='center', capsize=5, label='client-1', color = 'dimgray')
     c2 = plt.bar(ind+width*3/2, client2_values, width, yerr = client2_errors, align='center', capsize=5, label='client-2', color = 'blue')
     plt.xlabel('browser combinations')
     plt.xticks(ticks=ind+width, labels=names)
+    plt.ylim(0, 40)
 
     plt.legend()
     plt.ylim(bottom=0)
@@ -273,14 +275,13 @@ def plot_fps(combs):
 
     autolabel(c1)
     autolabel(c2)
-    plt.savefig(f"plots/fps-{'_'.join(map(str, combs))}.png", dpi=200)
+    plt.savefig(f"{PLOTSDIR}/fps-{'_'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
 def plot_packets(type1, type2, combs):
     client1_values = []
     client2_values = []
-
     names = []
     width = 0.32
 
@@ -291,19 +292,21 @@ def plot_packets(type1, type2, combs):
 
     # plt.xticks(np.arange(0, plot_x_limit, step=1))
     plt.legend()
-    plt.xlim([-0.1, plot_x_limit]) #
+    plt.xlim([-0.1, plot_x_limit])
+    ymax = 150 if type1 == 'audio' else 800
+    plt.ylim(0, ymax)
 
     if (type1 == 'audio'):
         if (type2 == 'packets_sent'):
             plt.title('Audio Packets Sent Per Second')
-            plt.savefig(f"plots/audio-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
+            plt.savefig(f"{PLOTSDIR}/audio-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Audio Packets Lost')
         #     plt.savefig('plots/audio-packets-lost.png', dpi=200)
     else:
         if (type2 == 'packets_sent'):
             plt.title('Video Packets Sent Per Second')
-            plt.savefig(f"plots/video-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
+            plt.savefig(f"{PLOTSDIR}/video-packets-sent-ps-{'_'.join(map(str, combs))}.png", dpi=200)
         # else:
         #     plt.title('Video Packets Lost')
         #     plt.savefig('plots/video-packets-lost.png', dpi=200)
@@ -326,23 +329,24 @@ def plot_total_packets_sent(type, combs):
     c1 = plt.bar(ind+width, client1_values, width, yerr=client1_errors, capsize=5, align='center')
     plt.xlabel('browser combinations')
     plt.xticks(ticks=ind+width, labels=names)
-    plt.ylim(bottom=0)
+
+
+    ymax = 1200 if type == 'audio' else 5300
+    plt.ylim(0, ymax)
     autolabel(c1)
-    # plt.ylim(top=)
     
     if (type == 'audio'):
         plt.title('Total audio packets sent')
-        plt.savefig(f"plots/total-audio-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/total-audio-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
     if (type == 'video'):
         plt.title('Total video packets sent')
-        plt.savefig(f"plots/total-video-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/total-video-packets-sent-{'_'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
 def plot_jitter(type, combs):
     client1_values = []
     client2_values = []
-
     names = []
     width = 0.32
 
@@ -356,17 +360,16 @@ def plot_jitter(type, combs):
 
     if type == 'audio':
         plt.title('Audio Jitter per Second')
-        plt.savefig(f"plots/audio-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/audio-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title('Video Jitter per Second')
-        plt.savefig(f"plots/video-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/video-jitter-{'_'.join(map(str, combs))}.png", dpi=200)
     plt.clf()
 
 
 def plot_frames(type, combs):
     client1_values = []
     client2_values = []
-
     names = []
     width = 0.32
 
@@ -378,12 +381,15 @@ def plot_frames(type, combs):
     plt.legend(ncol=2) # ncol=2 for multi column
     plt.xlim([-0.1, plot_x_limit])
 
+    y_max = 100
+    plt.ylim(0, y_max)
+
     if (type == 'frames_encoded'):
         plt.title("Frames Encoded per Second")
-        plt.savefig(f"plots/frames-encoded-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/frames-encoded-{'_'.join(map(str, combs))}.png", dpi=200)
     else:
         plt.title("Frames Decoded per Second")
-        plt.savefig(f"plots/frames-decoded-{'_'.join(map(str, combs))}.png", dpi=200)
+        plt.savefig(f"{PLOTSDIR}/frames-decoded-{'_'.join(map(str, combs))}.png", dpi=200)
 
     plt.clf()
 
@@ -524,13 +530,14 @@ def avg_dicts(results):
 
 
 if __name__ == "__main__":
-    os.makedirs('plots/', exist_ok=True)
+
+    os.makedirs(f"{PLOTSDIR}-webcam/", exist_ok=True)
     results = []
     chrome_combs = ['ch-ch', 'ch-fi', 'ch-op']
     firefox_combs = ['fi-fi', 'fi-ch', 'fi-op']
     opera_combs = ['op-op', 'op-ch', 'op-fi']
     
-    resultdir = glob.glob("results/run_*")
+    resultdir = glob.glob(f"{RESULTSDIR}/run_*")
     for rundir in resultdir:
         print(f"Checking {rundir}")
         os.chdir(f"{rundir}")
@@ -566,12 +573,12 @@ if __name__ == "__main__":
     plot_packets('audio', 'packets_sent', firefox_combs) 
     plot_packets('audio', 'packets_sent', opera_combs) 
     # plot_packets('audio', 'packets_lost') #! don't use, don't record value anymore in averaging
-    plot_jitter('audio', chrome_combs)
-    plot_jitter('audio', firefox_combs)
-    plot_jitter('audio', opera_combs)
-    plot_jitter('video', chrome_combs)
-    plot_jitter('video', firefox_combs)
-    plot_jitter('video', opera_combs)
+    # plot_jitter('audio', chrome_combs)
+    # plot_jitter('audio', firefox_combs)
+    # plot_jitter('audio', opera_combs)
+    # plot_jitter('video', chrome_combs)
+    # plot_jitter('video', firefox_combs)
+    # plot_jitter('video', opera_combs)
     plot_frames('frames_encoded', chrome_combs)
     plot_frames('frames_encoded', firefox_combs)
     plot_frames('frames_encoded', opera_combs)
@@ -584,7 +591,3 @@ if __name__ == "__main__":
     plot_total_packets_sent('video', chrome_combs)
     plot_total_packets_sent('video', firefox_combs)
     plot_total_packets_sent('video', opera_combs)
-
-
-# 1. use ch_op_fail, copied results from fi_op_fail, renamed to run_91
-# 2. use fi_op_fail2, copied from replace_run_ch_op_fail, 
