@@ -1,0 +1,2914 @@
+{
+ "getUserMedia": [
+  {
+   "audio": "",
+   "origin": "https://appr.tc",
+   "pid": 75136,
+   "rid": 6,
+   "timestamp": 1624454844756.503,
+   "video": "{advanced: [{width: {min: 1280}}, {height: {min: 720}}]}"
+  }
+ ],
+ "PeerConnections": {
+  "6-1": {
+   "pid": 75136,
+   "constraints": "",
+   "rtcConfiguration": "{ iceServers: [stun:turn2.l.google.com], iceTransportPolicy: all, bundlePolicy: max-bundle, rtcpMuxPolicy: require, iceCandidatePoolSize: 0, sdpSemantics: \"unified-plan\", extmapAllowMixed: true }",
+   "stats": {
+    "RTCAudioSource_1-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23944cf0-fcaa-4614-b573-efa8d1ab9091\",\"23944cf0-fcaa-4614-b573-efa8d1ab9091\",\"23944cf0-fcaa-4614-b573-efa8d1ab9091\"]"
+    },
+    "RTCAudioSource_1-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCAudioSource_1-audioLevel": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.012237922299874875,1,0.9731437116611225]"
+    },
+    "RTCAudioSource_1-totalAudioEnergy": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[7.350317580264607,7.557082508618163,8.517428617677096]"
+    },
+    "RTCAudioSource_1-[Audio_Level_in_RMS]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0.5083858381602552,0.979972504236105]"
+    },
+    "RTCAudioSource_1-totalSamplesDuration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[25.470000000001182,26.270000000001307,27.270000000001463]"
+    },
+    "RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5-fingerprint": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\",\"C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\",\"C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\"]"
+    },
+    "RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5-fingerprintAlgorithm": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"sha-256\",\"sha-256\",\"sha-256\"]"
+    },
+    "RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5-base64Certificate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"MIIBRjCB7KADAgECAgQFYfZCMAoGCCqGSM49BAMCMCsxKTAnBgNVBAMTIDY5MGZjMmZlNjZhZmI2YmYzOWM4ZjhiYWI2MTM1MDg4MB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowKzEpMCcGA1UEAxMgNjkwZmMyZmU2NmFmYjZiZjM5YzhmOGJhYjYxMzUwODgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASAM4H7u846ILPyGIEBRMGVMM9pUVtNL5NEGpeQWjRiFxLHFbLD6IbxaHdpvb9fizJjUAszEyCc6QesF3IArrNcMAoGCCqGSM49BAMCA0kAMEYCIQDmDkSfGGGABQIoRwYCIoj+9BZSiVI7aJLAy9kQRv8nVQIhAPCqn1W2+249/EhrEj5ouFEPz9r9h6vosZhaeCalqH6I\",\"MIIBRjCB7KADAgECAgQFYfZCMAoGCCqGSM49BAMCMCsxKTAnBgNVBAMTIDY5MGZjMmZlNjZhZmI2YmYzOWM4ZjhiYWI2MTM1MDg4MB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowKzEpMCcGA1UEAxMgNjkwZmMyZmU2NmFmYjZiZjM5YzhmOGJhYjYxMzUwODgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASAM4H7u846ILPyGIEBRMGVMM9pUVtNL5NEGpeQWjRiFxLHFbLD6IbxaHdpvb9fizJjUAszEyCc6QesF3IArrNcMAoGCCqGSM49BAMCA0kAMEYCIQDmDkSfGGGABQIoRwYCIoj+9BZSiVI7aJLAy9kQRv8nVQIhAPCqn1W2+249/EhrEj5ouFEPz9r9h6vosZhaeCalqH6I\",\"MIIBRjCB7KADAgECAgQFYfZCMAoGCCqGSM49BAMCMCsxKTAnBgNVBAMTIDY5MGZjMmZlNjZhZmI2YmYzOWM4ZjhiYWI2MTM1MDg4MB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowKzEpMCcGA1UEAxMgNjkwZmMyZmU2NmFmYjZiZjM5YzhmOGJhYjYxMzUwODgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASAM4H7u846ILPyGIEBRMGVMM9pUVtNL5NEGpeQWjRiFxLHFbLD6IbxaHdpvb9fizJjUAszEyCc6QesF3IArrNcMAoGCCqGSM49BAMCA0kAMEYCIQDmDkSfGGGABQIoRwYCIoj+9BZSiVI7aJLAy9kQRv8nVQIhAPCqn1W2+249/EhrEj5ouFEPz9r9h6vosZhaeCalqH6I\"]"
+    },
+    "RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B-fingerprint": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\",\"F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\",\"F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\"]"
+    },
+    "RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B-fingerprintAlgorithm": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"sha-256\",\"sha-256\",\"sha-256\"]"
+    },
+    "RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B-base64Certificate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"MIIBFjCBvaADAgECAgkA/ghsDKYOUjwwCgYIKoZIzj0EAwIwETEPMA0GA1UEAwwGV2ViUlRDMB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowETEPMA0GA1UEAwwGV2ViUlRDMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELi15qwMi9kgB4WSZJ4Dq3r98s/OBN2RZ4JTdvUj+SQ3gzw4WNDxgDfQaTaGxOeHUh+4q6ybuyohqABSRys4tCjAKBggqhkjOPQQDAgNIADBFAiEArB4FdlAv688bICfr+oOGk5uwrgJwX8nPDAzmqKhnVgECICf1RQDSQb84RtvvvrCCkjIcnVQ7Md/X4Q2QJXpY5rpZ\",\"MIIBFjCBvaADAgECAgkA/ghsDKYOUjwwCgYIKoZIzj0EAwIwETEPMA0GA1UEAwwGV2ViUlRDMB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowETEPMA0GA1UEAwwGV2ViUlRDMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELi15qwMi9kgB4WSZJ4Dq3r98s/OBN2RZ4JTdvUj+SQ3gzw4WNDxgDfQaTaGxOeHUh+4q6ybuyohqABSRys4tCjAKBggqhkjOPQQDAgNIADBFAiEArB4FdlAv688bICfr+oOGk5uwrgJwX8nPDAzmqKhnVgECICf1RQDSQb84RtvvvrCCkjIcnVQ7Md/X4Q2QJXpY5rpZ\",\"MIIBFjCBvaADAgECAgkA/ghsDKYOUjwwCgYIKoZIzj0EAwIwETEPMA0GA1UEAwwGV2ViUlRDMB4XDTIxMDYyMjEzMjcyNloXDTIxMDcyMzEzMjcyNlowETEPMA0GA1UEAwwGV2ViUlRDMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELi15qwMi9kgB4WSZJ4Dq3r98s/OBN2RZ4JTdvUj+SQ3gzw4WNDxgDfQaTaGxOeHUh+4q6ybuyohqABSRys4tCjAKBggqhkjOPQQDAgNIADBFAiEArB4FdlAv688bICfr+oOGk5uwrgJwX8nPDAzmqKhnVgECICf1RQDSQb84RtvvvrCCkjIcnVQ7Md/X4Q2QJXpY5rpZ\"]"
+    },
+    "RTCCodec_0_Inbound_0-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_0-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCCodec_0_Inbound_0-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/PCMU\",\"audio/PCMU\",\"audio/PCMU\"]"
+    },
+    "RTCCodec_0_Inbound_0-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Inbound_0-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_103-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_103-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[103,103,103]"
+    },
+    "RTCCodec_0_Inbound_103-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/ISAC\",\"audio/ISAC\",\"audio/ISAC\"]"
+    },
+    "RTCCodec_0_Inbound_103-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[16000,16000,16000]"
+    },
+    "RTCCodec_0_Inbound_103-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_104-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_104-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[104,104,104]"
+    },
+    "RTCCodec_0_Inbound_104-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/ISAC\",\"audio/ISAC\",\"audio/ISAC\"]"
+    },
+    "RTCCodec_0_Inbound_104-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[32000,32000,32000]"
+    },
+    "RTCCodec_0_Inbound_104-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_110-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_110-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[110,110,110]"
+    },
+    "RTCCodec_0_Inbound_110-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/telephone-event\",\"audio/telephone-event\",\"audio/telephone-event\"]"
+    },
+    "RTCCodec_0_Inbound_110-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[48000,48000,48000]"
+    },
+    "RTCCodec_0_Inbound_110-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_111-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_111-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[111,111,111]"
+    },
+    "RTCCodec_0_Inbound_111-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/opus\",\"audio/opus\",\"audio/opus\"]"
+    },
+    "RTCCodec_0_Inbound_111-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[48000,48000,48000]"
+    },
+    "RTCCodec_0_Inbound_111-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2,2,2]"
+    },
+    "RTCCodec_0_Inbound_111-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"minptime=10;useinbandfec=1\",\"minptime=10;useinbandfec=1\",\"minptime=10;useinbandfec=1\"]"
+    },
+    "RTCCodec_0_Inbound_112-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_112-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[112,112,112]"
+    },
+    "RTCCodec_0_Inbound_112-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/telephone-event\",\"audio/telephone-event\",\"audio/telephone-event\"]"
+    },
+    "RTCCodec_0_Inbound_112-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[32000,32000,32000]"
+    },
+    "RTCCodec_0_Inbound_112-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_113-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_113-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[113,113,113]"
+    },
+    "RTCCodec_0_Inbound_113-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/telephone-event\",\"audio/telephone-event\",\"audio/telephone-event\"]"
+    },
+    "RTCCodec_0_Inbound_113-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[16000,16000,16000]"
+    },
+    "RTCCodec_0_Inbound_113-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_126-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_126-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[126,126,126]"
+    },
+    "RTCCodec_0_Inbound_126-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/telephone-event\",\"audio/telephone-event\",\"audio/telephone-event\"]"
+    },
+    "RTCCodec_0_Inbound_126-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Inbound_126-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_8-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_8-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8,8,8]"
+    },
+    "RTCCodec_0_Inbound_8-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/PCMA\",\"audio/PCMA\",\"audio/PCMA\"]"
+    },
+    "RTCCodec_0_Inbound_8-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Inbound_8-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Inbound_9-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Inbound_9-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[9,9,9]"
+    },
+    "RTCCodec_0_Inbound_9-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/G722\",\"audio/G722\",\"audio/G722\"]"
+    },
+    "RTCCodec_0_Inbound_9-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Inbound_9-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Outbound_0-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Outbound_0-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCCodec_0_Outbound_0-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/PCMU\",\"audio/PCMU\",\"audio/PCMU\"]"
+    },
+    "RTCCodec_0_Outbound_0-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Outbound_0-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Outbound_111-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Outbound_111-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[111,111,111]"
+    },
+    "RTCCodec_0_Outbound_111-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/opus\",\"audio/opus\",\"audio/opus\"]"
+    },
+    "RTCCodec_0_Outbound_111-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[48000,48000,48000]"
+    },
+    "RTCCodec_0_Outbound_111-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2,2,2]"
+    },
+    "RTCCodec_0_Outbound_111-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"maxplaybackrate=48000;stereo=1;useinbandfec=1\",\"maxplaybackrate=48000;stereo=1;useinbandfec=1\",\"maxplaybackrate=48000;stereo=1;useinbandfec=1\"]"
+    },
+    "RTCCodec_0_Outbound_126-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Outbound_126-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[126,126,126]"
+    },
+    "RTCCodec_0_Outbound_126-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/telephone-event\",\"audio/telephone-event\",\"audio/telephone-event\"]"
+    },
+    "RTCCodec_0_Outbound_126-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Outbound_126-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Outbound_126-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"0-15\",\"0-15\",\"0-15\"]"
+    },
+    "RTCCodec_0_Outbound_8-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Outbound_8-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8,8,8]"
+    },
+    "RTCCodec_0_Outbound_8-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/PCMA\",\"audio/PCMA\",\"audio/PCMA\"]"
+    },
+    "RTCCodec_0_Outbound_8-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Outbound_8-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_0_Outbound_9-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_0_Outbound_9-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[9,9,9]"
+    },
+    "RTCCodec_0_Outbound_9-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio/G722\",\"audio/G722\",\"audio/G722\"]"
+    },
+    "RTCCodec_0_Outbound_9-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[8000,8000,8000]"
+    },
+    "RTCCodec_0_Outbound_9-channels": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCCodec_1_Inbound_100-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_100-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[100,100,100]"
+    },
+    "RTCCodec_1_Inbound_100-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/VP9\",\"video/VP9\",\"video/VP9\"]"
+    },
+    "RTCCodec_1_Inbound_100-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_100-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"profile-id=2\",\"profile-id=2\",\"profile-id=2\"]"
+    },
+    "RTCCodec_1_Inbound_101-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_101-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[101,101,101]"
+    },
+    "RTCCodec_1_Inbound_101-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_101-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_101-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=100\",\"apt=100\",\"apt=100\"]"
+    },
+    "RTCCodec_1_Inbound_102-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_102-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[102,102,102]"
+    },
+    "RTCCodec_1_Inbound_102-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_102-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_102-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\"]"
+    },
+    "RTCCodec_1_Inbound_107-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_107-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[107,107,107]"
+    },
+    "RTCCodec_1_Inbound_107-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_107-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_107-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=125\",\"apt=125\",\"apt=125\"]"
+    },
+    "RTCCodec_1_Inbound_108-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_108-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[108,108,108]"
+    },
+    "RTCCodec_1_Inbound_108-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_108-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_108-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\"]"
+    },
+    "RTCCodec_1_Inbound_109-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_109-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[109,109,109]"
+    },
+    "RTCCodec_1_Inbound_109-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_109-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_109-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=108\",\"apt=108\",\"apt=108\"]"
+    },
+    "RTCCodec_1_Inbound_114-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_114-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[114,114,114]"
+    },
+    "RTCCodec_1_Inbound_114-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/red\",\"video/red\",\"video/red\"]"
+    },
+    "RTCCodec_1_Inbound_114-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_115-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_115-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[115,115,115]"
+    },
+    "RTCCodec_1_Inbound_115-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_115-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_115-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=114\",\"apt=114\",\"apt=114\"]"
+    },
+    "RTCCodec_1_Inbound_116-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_116-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[116,116,116]"
+    },
+    "RTCCodec_1_Inbound_116-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/ulpfec\",\"video/ulpfec\",\"video/ulpfec\"]"
+    },
+    "RTCCodec_1_Inbound_116-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_118-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_118-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[118,118,118]"
+    },
+    "RTCCodec_1_Inbound_118-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_118-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_118-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=123\",\"apt=123\",\"apt=123\"]"
+    },
+    "RTCCodec_1_Inbound_119-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_119-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[119,119,119]"
+    },
+    "RTCCodec_1_Inbound_119-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_119-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_119-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=124\",\"apt=124\",\"apt=124\"]"
+    },
+    "RTCCodec_1_Inbound_120-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_120-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[120,120,120]"
+    },
+    "RTCCodec_1_Inbound_120-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_120-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_120-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=127\",\"apt=127\",\"apt=127\"]"
+    },
+    "RTCCodec_1_Inbound_121-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_121-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[121,121,121]"
+    },
+    "RTCCodec_1_Inbound_121-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_121-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_121-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=102\",\"apt=102\",\"apt=102\"]"
+    },
+    "RTCCodec_1_Inbound_123-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_123-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[123,123,123]"
+    },
+    "RTCCodec_1_Inbound_123-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_123-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_123-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=640032\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=640032\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=640032\"]"
+    },
+    "RTCCodec_1_Inbound_124-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_124-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[124,124,124]"
+    },
+    "RTCCodec_1_Inbound_124-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_124-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_124-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d0032\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d0032\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d0032\"]"
+    },
+    "RTCCodec_1_Inbound_125-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_125-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[125,125,125]"
+    },
+    "RTCCodec_1_Inbound_125-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_125-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_125-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\"]"
+    },
+    "RTCCodec_1_Inbound_127-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_127-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[127,127,127]"
+    },
+    "RTCCodec_1_Inbound_127-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Inbound_127-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_127-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\",\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\",\"level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\"]"
+    },
+    "RTCCodec_1_Inbound_35-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_35-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[35,35,35]"
+    },
+    "RTCCodec_1_Inbound_35-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/AV1X\",\"video/AV1X\",\"video/AV1X\"]"
+    },
+    "RTCCodec_1_Inbound_35-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_36-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_36-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[36,36,36]"
+    },
+    "RTCCodec_1_Inbound_36-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_36-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_36-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=35\",\"apt=35\",\"apt=35\"]"
+    },
+    "RTCCodec_1_Inbound_96-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_96-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[96,96,96]"
+    },
+    "RTCCodec_1_Inbound_96-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/VP8\",\"video/VP8\",\"video/VP8\"]"
+    },
+    "RTCCodec_1_Inbound_96-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_97-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_97-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[97,97,97]"
+    },
+    "RTCCodec_1_Inbound_97-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_97-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_97-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=96\",\"apt=96\",\"apt=96\"]"
+    },
+    "RTCCodec_1_Inbound_98-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_98-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[98,98,98]"
+    },
+    "RTCCodec_1_Inbound_98-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/VP9\",\"video/VP9\",\"video/VP9\"]"
+    },
+    "RTCCodec_1_Inbound_98-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_98-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"profile-id=0\",\"profile-id=0\",\"profile-id=0\"]"
+    },
+    "RTCCodec_1_Inbound_99-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Inbound_99-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[99,99,99]"
+    },
+    "RTCCodec_1_Inbound_99-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Inbound_99-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Inbound_99-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=98\",\"apt=98\",\"apt=98\"]"
+    },
+    "RTCCodec_1_Outbound_107-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_107-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[107,107,107]"
+    },
+    "RTCCodec_1_Outbound_107-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Outbound_107-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_107-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=125\",\"apt=125\",\"apt=125\"]"
+    },
+    "RTCCodec_1_Outbound_108-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_108-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[108,108,108]"
+    },
+    "RTCCodec_1_Outbound_108-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Outbound_108-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_108-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;profile-level-id=42e01f\"]"
+    },
+    "RTCCodec_1_Outbound_109-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_109-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[109,109,109]"
+    },
+    "RTCCodec_1_Outbound_109-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Outbound_109-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_109-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=108\",\"apt=108\",\"apt=108\"]"
+    },
+    "RTCCodec_1_Outbound_125-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_125-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[125,125,125]"
+    },
+    "RTCCodec_1_Outbound_125-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/H264\",\"video/H264\",\"video/H264\"]"
+    },
+    "RTCCodec_1_Outbound_125-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_125-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\",\"level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\"]"
+    },
+    "RTCCodec_1_Outbound_96-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_96-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[96,96,96]"
+    },
+    "RTCCodec_1_Outbound_96-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/VP8\",\"video/VP8\",\"video/VP8\"]"
+    },
+    "RTCCodec_1_Outbound_96-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_96-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"max-fr=60;max-fs=12288\",\"max-fr=60;max-fs=12288\",\"max-fr=60;max-fs=12288\"]"
+    },
+    "RTCCodec_1_Outbound_97-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_97-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[97,97,97]"
+    },
+    "RTCCodec_1_Outbound_97-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Outbound_97-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_97-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=96\",\"apt=96\",\"apt=96\"]"
+    },
+    "RTCCodec_1_Outbound_98-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_98-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[98,98,98]"
+    },
+    "RTCCodec_1_Outbound_98-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/VP9\",\"video/VP9\",\"video/VP9\"]"
+    },
+    "RTCCodec_1_Outbound_98-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_98-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"max-fr=60;max-fs=12288\",\"max-fr=60;max-fs=12288\",\"max-fr=60;max-fs=12288\"]"
+    },
+    "RTCCodec_1_Outbound_99-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCCodec_1_Outbound_99-payloadType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[99,99,99]"
+    },
+    "RTCCodec_1_Outbound_99-mimeType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video/rtx\",\"video/rtx\",\"video/rtx\"]"
+    },
+    "RTCCodec_1_Outbound_99-clockRate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[90000,90000,90000]"
+    },
+    "RTCCodec_1_Outbound_99-sdpFmtpLine": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"apt=98\",\"apt=98\",\"apt=98\"]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-localCandidateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCIceCandidate_Frzp5dS5\",\"RTCIceCandidate_Frzp5dS5\",\"RTCIceCandidate_Frzp5dS5\"]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-remoteCandidateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCIceCandidate_bZMMdH4w\",\"RTCIceCandidate_bZMMdH4w\",\"RTCIceCandidate_bZMMdH4w\"]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-state": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"succeeded\",\"succeeded\",\"succeeded\"]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[9114723795305512000,9114723795305512000,9114723795305512000]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-nominated": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-writable": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-bytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6906,6906,6906]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-[bytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-bytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6211,6211,6211]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-[bytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-totalRoundTripTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.009,0.011,0.011]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-[totalRoundTripTime/responsesReceived]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0.002,0]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-currentRoundTripTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.003,0.002,0.002]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-requestsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-requestsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-responsesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3,4,4]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-responsesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCIceCandidatePair_Frzp5dS5_bZMMdH4w-consentRequestsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2,3,3]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-localCandidateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCIceCandidate_rNlXiCIT\",\"RTCIceCandidate_rNlXiCIT\",\"RTCIceCandidate_rNlXiCIT\"]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-remoteCandidateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCIceCandidate_I6jXuisY\",\"RTCIceCandidate_I6jXuisY\",\"RTCIceCandidate_I6jXuisY\"]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-state": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"succeeded\",\"succeeded\",\"succeeded\"]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[9115005270282359000,9115005270282359000,9115005270282359000]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-nominated": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-writable": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-bytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5993126,6220300,6442742]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-[bytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,2259889.907901423,1778975.709922598]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-bytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6246111,6395677,6715504]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-[bytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,1487858.1790397854,2557810.4151977357]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-totalRoundTripTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.021,0.022,0.022]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-[totalRoundTripTime/responsesReceived]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0.0009999999999999974,0]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-currentRoundTripTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.001,0.001,0.001]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-availableOutgoingBitrate": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[4631184,4631184,4631184]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-requestsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6,6,6]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-requestsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-responsesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[13,14,14]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-responsesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6,6,6]"
+    },
+    "RTCIceCandidatePair_rNlXiCIT_I6jXuisY-consentRequestsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[12,13,13]"
+    },
+    "RTCIceCandidate_Frzp5dS5-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-isRemote": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCIceCandidate_Frzp5dS5-networkType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"wifi\",\"wifi\",\"wifi\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-ip": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"192.168.1.12\",\"192.168.1.12\",\"192.168.1.12\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-address": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"192.168.1.12\",\"192.168.1.12\",\"192.168.1.12\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-port": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[54769,54769,54769]"
+    },
+    "RTCIceCandidate_Frzp5dS5-protocol": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"udp\",\"udp\",\"udp\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-candidateType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"host\",\"host\",\"host\"]"
+    },
+    "RTCIceCandidate_Frzp5dS5-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2122194687,2122194687,2122194687]"
+    },
+    "RTCIceCandidate_I6jXuisY-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidate_I6jXuisY-isRemote": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidate_I6jXuisY-ip": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\"]"
+    },
+    "RTCIceCandidate_I6jXuisY-address": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\"]"
+    },
+    "RTCIceCandidate_I6jXuisY-port": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[55360,55360,55360]"
+    },
+    "RTCIceCandidate_I6jXuisY-protocol": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"udp\",\"udp\",\"udp\"]"
+    },
+    "RTCIceCandidate_I6jXuisY-candidateType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"host\",\"host\",\"host\"]"
+    },
+    "RTCIceCandidate_I6jXuisY-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2122252543,2122252543,2122252543]"
+    },
+    "RTCIceCandidate_bZMMdH4w-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidate_bZMMdH4w-isRemote": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCIceCandidate_bZMMdH4w-ip": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"192.168.1.12\",\"192.168.1.12\",\"192.168.1.12\"]"
+    },
+    "RTCIceCandidate_bZMMdH4w-address": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"192.168.1.12\",\"192.168.1.12\",\"192.168.1.12\"]"
+    },
+    "RTCIceCandidate_bZMMdH4w-port": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[55359,55359,55359]"
+    },
+    "RTCIceCandidate_bZMMdH4w-protocol": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"udp\",\"udp\",\"udp\"]"
+    },
+    "RTCIceCandidate_bZMMdH4w-candidateType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"host\",\"host\",\"host\"]"
+    },
+    "RTCIceCandidate_bZMMdH4w-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2122187007,2122187007,2122187007]"
+    },
+    "RTCIceCandidate_rNlXiCIT-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-isRemote": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCIceCandidate_rNlXiCIT-networkType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"wifi\",\"wifi\",\"wifi\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-ip": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-address": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\",\"2a02:587:3e07:5100:e950:d005:6847:63d8\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-port": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[54416,54416,54416]"
+    },
+    "RTCIceCandidate_rNlXiCIT-protocol": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"udp\",\"udp\",\"udp\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-candidateType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"host\",\"host\",\"host\"]"
+    },
+    "RTCIceCandidate_rNlXiCIT-priority": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2122262783,2122262783,2122262783]"
+    },
+    "RTCInboundRTPAudioStream_482208104-ssrc": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"482208104\",\"482208104\",\"482208104\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-trackId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCMediaStreamTrack_receiver_1\",\"RTCMediaStreamTrack_receiver_1\",\"RTCMediaStreamTrack_receiver_1\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-codecId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCodec_0_Inbound_111\",\"RTCCodec_0_Inbound_111\",\"RTCCodec_0_Inbound_111\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[codec]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"opus (111, minptime=10;useinbandfec=1)\",\"opus (111, minptime=10;useinbandfec=1)\",\"opus (111, minptime=10;useinbandfec=1)\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-mediaType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-jitter": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.006,0.004,0.008]"
+    },
+    "RTCInboundRTPAudioStream_482208104-packetsLost": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-remoteId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCRemoteOutboundRTPAudioStream_482208104\",\"RTCRemoteOutboundRTPAudioStream_482208104\",\"RTCRemoteOutboundRTPAudioStream_482208104\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-packetsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1234,1274,1324]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[packetsReceived/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,49.73918467565441,49.98425741099359]"
+    },
+    "RTCInboundRTPAudioStream_482208104-fecPacketsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-fecPacketsDiscarded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-bytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[99954,103228,106697]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[bytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,32569.218125618507,27743.262233397883]"
+    },
+    "RTCInboundRTPAudioStream_482208104-headerBytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24680,25480,26480]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[headerBytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,7958.269548104706,7997.481185758975]"
+    },
+    "RTCInboundRTPAudioStream_482208104-lastPacketReceivedTimestamp": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1624454871566,1624454872369,1624454873371]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[lastPacketReceivedTimestamp]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23/06/2021, 16:27:51\",\"23/06/2021, 16:27:52\",\"23/06/2021, 16:27:53\"]"
+    },
+    "RTCInboundRTPAudioStream_482208104-jitterBufferDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[46963.2,48518.4,50457.6]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[jitterBufferDelay/jitterBufferEmittedCount_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,40.500000000000114,41.22448979591831]"
+    },
+    "RTCInboundRTPAudioStream_482208104-jitterBufferEmittedCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1182720,1221120,1268160]"
+    },
+    "RTCInboundRTPAudioStream_482208104-totalSamplesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1183840,1222240,1270720]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[totalSamplesReceived/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,47749.61728862824,48464.735985699386]"
+    },
+    "RTCInboundRTPAudioStream_482208104-concealedSamples": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1855,1855,2759]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[concealedSamples/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,903.7153739907642]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[concealedSamples/totalSamplesReceived]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0.01864686468646865]"
+    },
+    "RTCInboundRTPAudioStream_482208104-silentConcealedSamples": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[silentConcealedSamples/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-concealmentEvents": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3,3,4]"
+    },
+    "RTCInboundRTPAudioStream_482208104-insertedSamplesForDeceleration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1271,1271,1271]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[insertedSamplesForDeceleration/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-removedSamplesForAcceleration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1465,1465,1465]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[removedSamplesForAcceleration/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPAudioStream_482208104-audioLevel": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.016571550645466476,0.004699850459303568,0.0032654805139316996]"
+    },
+    "RTCInboundRTPAudioStream_482208104-totalAudioEnergy": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[10.117258402583598,10.118242641884434,10.118254964816506]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[Audio_Level_in_RMS]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0.035075620109196855,0.003492981941501664]"
+    },
+    "RTCInboundRTPAudioStream_482208104-totalSamplesDuration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24.670000000001057,25.470000000001182,26.48000000000134]"
+    },
+    "RTCInboundRTPAudioStream_482208104-estimatedPlayoutTimestamp": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3833443671521,3833443672329,3833443673311]"
+    },
+    "RTCInboundRTPAudioStream_482208104-[estimatedPlayoutTimestamp]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23/06/2091, 16:27:51\",\"23/06/2091, 16:27:52\",\"23/06/2091, 16:27:53\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-ssrc": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"3111141959\",\"3111141959\",\"3111141959\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-trackId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCMediaStreamTrack_receiver_2\",\"RTCMediaStreamTrack_receiver_2\",\"RTCMediaStreamTrack_receiver_2\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-codecId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCodec_1_Inbound_98\",\"RTCCodec_1_Inbound_98\",\"RTCCodec_1_Inbound_98\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[codec]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"VP9 (98, profile-id=0)\",\"VP9 (98, profile-id=0)\",\"VP9 (98, profile-id=0)\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-mediaType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-jitter": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2.451,1.29,2.042]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-packetsLost": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-packetsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5379,5509,5776]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[packetsReceived/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,161.65235019587683,266.9159345747058]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-bytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5841730,5980194,6282564]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[bytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,1377417.2933859625,2418198.3861379414]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-headerBytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[172128,176288,184832]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[headerBytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,41383.00165014447,68330.47925112468]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-lastPacketReceivedTimestamp": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1624454871520,1624454872369,1624454873345]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[lastPacketReceivedTimestamp]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23/06/2021, 16:27:51\",\"23/06/2021, 16:27:52\",\"23/06/2021, 16:27:53\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-framesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[711,734,750]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[framesReceived/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,28.600031188501287,15.99496237151795]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[framesReceived-framesDecoded]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,1,1]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-frameWidth": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[640,640,640]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-frameHeight": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[480,480,480]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-framesPerSecond": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[22,25,15]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-framesDecoded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[711,733,749]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[framesDecoded/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,27.356551571609927,15.99496237151795]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-keyFramesDecoded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[keyFramesDecoded/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-framesDropped": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-totalDecodeTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3.736,3.839,4.039]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[totalDecodeTime/framesDecoded_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,4.681818181818171,12.499999999999984]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-totalInterFrameDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24.51100000000001,25.328000000000003,26.33600000000001]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[totalInterFrameDelay/framesDecoded_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,37.13636363636332,63.00000000000039]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-totalSquaredInterFrameDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.9272370000000016,0.9609520000000016,1.0539100000000017]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[interFrameDelayStDev_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,12.385091677811245,42.90541923813304]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-estimatedPlayoutTimestamp": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3833443671478,3833443672282,3833443673269]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[estimatedPlayoutTimestamp]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23/06/2091, 16:27:51\",\"23/06/2091, 16:27:52\",\"23/06/2091, 16:27:53\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-decoderImplementation": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"libvpx\",\"libvpx\",\"libvpx\"]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-firCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-pliCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-nackCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-qpSum": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[66658,69058,70129]"
+    },
+    "RTCInboundRTPVideoStream_3111141959-[qpSum/framesDecoded]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,109.0909090909091,66.9375]"
+    },
+    "RTCMediaStreamTrack_receiver_1-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"e4a0dc94-675d-43be-836b-067cb2489e71\",\"e4a0dc94-675d-43be-836b-067cb2489e71\",\"e4a0dc94-675d-43be-836b-067cb2489e71\"]"
+    },
+    "RTCMediaStreamTrack_receiver_1-remoteSource": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCMediaStreamTrack_receiver_1-ended": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_receiver_1-detached": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_receiver_1-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCMediaStreamTrack_receiver_1-jitterBufferDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[46963.2,48518.4,50457.6]"
+    },
+    "RTCMediaStreamTrack_receiver_1-[jitterBufferDelay/jitterBufferEmittedCount_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,40.500000000000114,41.22448979591831]"
+    },
+    "RTCMediaStreamTrack_receiver_1-jitterBufferEmittedCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1182720,1221120,1268160]"
+    },
+    "RTCMediaStreamTrack_receiver_1-audioLevel": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.016571550645466476,0.004699850459303568,0.0032654805139316996]"
+    },
+    "RTCMediaStreamTrack_receiver_1-totalAudioEnergy": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[10.117258402583598,10.118242641884434,10.118254964816506]"
+    },
+    "RTCMediaStreamTrack_receiver_1-[Audio_Level_in_RMS]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0.035075620109196855,0.003492981941501664]"
+    },
+    "RTCMediaStreamTrack_receiver_1-totalSamplesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1183840,1222240,1270720]"
+    },
+    "RTCMediaStreamTrack_receiver_1-totalSamplesDuration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24.670000000001057,25.470000000001182,26.48000000000134]"
+    },
+    "RTCMediaStreamTrack_receiver_1-concealedSamples": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1855,1855,2759]"
+    },
+    "RTCMediaStreamTrack_receiver_1-silentConcealedSamples": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_1-concealmentEvents": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[3,3,4]"
+    },
+    "RTCMediaStreamTrack_receiver_1-insertedSamplesForDeceleration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1271,1271,1271]"
+    },
+    "RTCMediaStreamTrack_receiver_1-removedSamplesForAcceleration": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1465,1465,1465]"
+    },
+    "RTCMediaStreamTrack_receiver_1-jitterBufferFlushes*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2,2,2]"
+    },
+    "RTCMediaStreamTrack_receiver_1-delayedPacketOutageSamples*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1695,1695,2599]"
+    },
+    "RTCMediaStreamTrack_receiver_1-relativePacketArrivalDelay*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[11.74,12.1,12.76]"
+    },
+    "RTCMediaStreamTrack_receiver_1-jitterBufferTargetDelay*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[41702.4,43238.4,45120]"
+    },
+    "RTCMediaStreamTrack_receiver_1-interruptionCount*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_1-totalInterruptionDuration*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"1d578545-4adb-4269-8324-3631a2e2e3f6\",\"1d578545-4adb-4269-8324-3631a2e2e3f6\",\"1d578545-4adb-4269-8324-3631a2e2e3f6\"]"
+    },
+    "RTCMediaStreamTrack_receiver_2-remoteSource": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[true,true,true]"
+    },
+    "RTCMediaStreamTrack_receiver_2-ended": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_receiver_2-detached": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_receiver_2-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCMediaStreamTrack_receiver_2-jitterBufferDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[34.162,35.206,36.089]"
+    },
+    "RTCMediaStreamTrack_receiver_2-[jitterBufferDelay/jitterBufferEmittedCount_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,47.45454545454564,55.18749999999972]"
+    },
+    "RTCMediaStreamTrack_receiver_2-jitterBufferEmittedCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[710,732,748]"
+    },
+    "RTCMediaStreamTrack_receiver_2-frameWidth": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[640,640,640]"
+    },
+    "RTCMediaStreamTrack_receiver_2-frameHeight": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[480,480,480]"
+    },
+    "RTCMediaStreamTrack_receiver_2-framesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[711,734,750]"
+    },
+    "RTCMediaStreamTrack_receiver_2-[framesReceived/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,28.600031188501287,15.99496237151795]"
+    },
+    "RTCMediaStreamTrack_receiver_2-[framesReceived-framesDecoded]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,1,1]"
+    },
+    "RTCMediaStreamTrack_receiver_2-framesDecoded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[711,733,749]"
+    },
+    "RTCMediaStreamTrack_receiver_2-framesDropped": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-freezeCount*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-pauseCount*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-totalFreezesDuration*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-totalPausesDuration*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCMediaStreamTrack_receiver_2-totalFramesDuration*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24.511,25.328,26.336]"
+    },
+    "RTCMediaStreamTrack_receiver_2-sumOfSquaredFramesDuration*": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0.9271710000000017,0.9609000000000016,1.053834000000002]"
+    },
+    "RTCMediaStreamTrack_sender_1-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"23944cf0-fcaa-4614-b573-efa8d1ab9091\",\"23944cf0-fcaa-4614-b573-efa8d1ab9091\",\"23944cf0-fcaa-4614-b573-efa8d1ab9091\"]"
+    },
+    "RTCMediaStreamTrack_sender_1-mediaSourceId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCAudioSource_1\",\"RTCAudioSource_1\",\"RTCAudioSource_1\"]"
+    },
+    "RTCMediaStreamTrack_sender_1-remoteSource": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_1-ended": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_1-detached": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_1-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCMediaStreamTrack_sender_2-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"459076d0-3c67-4240-83ac-89c552a8c543\",\"459076d0-3c67-4240-83ac-89c552a8c543\",\"459076d0-3c67-4240-83ac-89c552a8c543\"]"
+    },
+    "RTCMediaStreamTrack_sender_2-mediaSourceId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCVideoSource_2\",\"RTCVideoSource_2\",\"RTCVideoSource_2\"]"
+    },
+    "RTCMediaStreamTrack_sender_2-remoteSource": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_2-ended": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_2-detached": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[false,false,false]"
+    },
+    "RTCMediaStreamTrack_sender_2-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCMediaStreamTrack_sender_2-frameWidth": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1280,1280,1280]"
+    },
+    "RTCMediaStreamTrack_sender_2-frameHeight": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[720,720,720]"
+    },
+    "RTCMediaStreamTrack_sender_2-framesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[654,673,684]"
+    },
+    "RTCMediaStreamTrack_sender_2-[framesSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,23.626112720935843,10.996536630418591]"
+    },
+    "RTCMediaStreamTrack_sender_2-hugeFramesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCMediaStream_pMkUbVLwbj5q1BRFdh1kpEF3QhpKz6fHnqD6-streamIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"pMkUbVLwbj5q1BRFdh1kpEF3QhpKz6fHnqD6\",\"pMkUbVLwbj5q1BRFdh1kpEF3QhpKz6fHnqD6\",\"pMkUbVLwbj5q1BRFdh1kpEF3QhpKz6fHnqD6\"]"
+    },
+    "RTCMediaStream_pMkUbVLwbj5q1BRFdh1kpEF3QhpKz6fHnqD6-trackIds": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"[\\\"RTCMediaStreamTrack_sender_1\\\",\\\"RTCMediaStreamTrack_sender_2\\\"]\",\"[\\\"RTCMediaStreamTrack_sender_1\\\",\\\"RTCMediaStreamTrack_sender_2\\\"]\",\"[\\\"RTCMediaStreamTrack_sender_1\\\",\\\"RTCMediaStreamTrack_sender_2\\\"]\"]"
+    },
+    "RTCMediaStream_{1bb3630a-b405-a746-a3b9-405af3d5511f}-streamIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"{1bb3630a-b405-a746-a3b9-405af3d5511f}\",\"{1bb3630a-b405-a746-a3b9-405af3d5511f}\",\"{1bb3630a-b405-a746-a3b9-405af3d5511f}\"]"
+    },
+    "RTCMediaStream_{1bb3630a-b405-a746-a3b9-405af3d5511f}-trackIds": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"[\\\"RTCMediaStreamTrack_receiver_1\\\",\\\"RTCMediaStreamTrack_receiver_2\\\"]\",\"[\\\"RTCMediaStreamTrack_receiver_1\\\",\\\"RTCMediaStreamTrack_receiver_2\\\"]\",\"[\\\"RTCMediaStreamTrack_receiver_1\\\",\\\"RTCMediaStreamTrack_receiver_2\\\"]\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-ssrc": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"3563195499\",\"3563195499\",\"3563195499\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-trackId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCMediaStreamTrack_sender_1\",\"RTCMediaStreamTrack_sender_1\",\"RTCMediaStreamTrack_sender_1\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-codecId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCodec_0_Outbound_111\",\"RTCCodec_0_Outbound_111\",\"RTCCodec_0_Outbound_111\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[codec]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"opus (111, maxplaybackrate=48000;stereo=1;useinbandfec=1)\",\"opus (111, maxplaybackrate=48000;stereo=1;useinbandfec=1)\",\"opus (111, maxplaybackrate=48000;stereo=1;useinbandfec=1)\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-mediaType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-mediaSourceId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCAudioSource_1\",\"RTCAudioSource_1\",\"RTCAudioSource_1\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-remoteId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCRemoteInboundRtpAudioStream_3563195499\",\"RTCRemoteInboundRtpAudioStream_3563195499\",\"RTCRemoteInboundRtpAudioStream_3563195499\"]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-packetsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1234,1274,1324]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[packetsSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,49.73918467565441,49.98425741099359]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-retransmittedPacketsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[retransmittedPacketsSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-bytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[198701,205274,213324]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[bytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,65387.13217461529,64379.72354535975]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-headerBytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[24680,25480,26480]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[headerBytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,7958.269548104706,7997.481185758975]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-retransmittedBytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPAudioStream_3563195499-[retransmittedBytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-ssrc": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"343568987\",\"343568987\",\"343568987\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-trackId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCMediaStreamTrack_sender_2\",\"RTCMediaStreamTrack_sender_2\",\"RTCMediaStreamTrack_sender_2\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-transportId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-codecId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCodec_1_Outbound_98\",\"RTCCodec_1_Outbound_98\",\"RTCCodec_1_Outbound_98\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[codec]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"VP9 (98, max-fr=60;max-fs=12288)\",\"VP9 (98, max-fr=60;max-fs=12288)\",\"VP9 (98, max-fr=60;max-fs=12288)\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-mediaType": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-mediaSourceId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCVideoSource_2\",\"RTCVideoSource_2\",\"RTCVideoSource_2\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-remoteId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCRemoteInboundRtpVideoStream_343568987\",\"RTCRemoteInboundRtpVideoStream_343568987\",\"RTCRemoteInboundRtpVideoStream_343568987\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-packetsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5089,5279,5460]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[packetsSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,236.26112720935845,180.94301182779682]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-retransmittedPacketsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[retransmittedPacketsSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-bytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5549070,5760937,5966361]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[bytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,2107618.3679353744,1642874.5751033516]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-headerBytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[130164,134724,139068]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[headerBytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,45362.13642419682,34741.058270936985]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-retransmittedBytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[retransmittedBytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-framesEncoded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[654,673,684]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[framesEncoded/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,23.626112720935843,10.996536630418591]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-keyFramesEncoded": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[5,5,5]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-totalEncodeTime": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[15.552,16.196,17.132]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[totalEncodeTime/framesEncoded_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,33.89473684210537,85.0909090909091]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-totalEncodedBytesTarget": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[totalEncodedBytesTarget_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-frameWidth": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1280,1280,1280]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-frameHeight": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[720,720,720]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-framesPerSecond": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[16,20,12]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-framesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[654,673,684]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[framesSent/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,23.626112720935843,10.996536630418591]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-hugeFramesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1,1,1]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-totalPacketSendDelay": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[298.103,312.612,336.974]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[totalPacketSendDelay/packetsSent_in_ms]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,76.36315789473693,134.59668508287274]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-qualityLimitationReason": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"none\",\"none\",\"none\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-qualityLimitationResolutionChanges": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-encoderImplementation": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"libvpx\",\"libvpx\",\"libvpx\"]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-firCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-pliCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-nackCount": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-qpSum": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[76849,79301,80897]"
+    },
+    "RTCOutboundRTPVideoStream_343568987-[qpSum/framesEncoded]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,129.05263157894737,145.0909090909091]"
+    },
+    "RTCPeerConnection-dataChannelsOpened": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCPeerConnection-dataChannelsClosed": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,0,0]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-ssrc": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[\"3563195499\",\"3563195499\",\"3563195499\"]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-kind": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-transportId": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-codecId": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[\"RTCCodec_0_Outbound_111\",\"RTCCodec_0_Outbound_111\",\"RTCCodec_0_Outbound_111\"]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-jitter": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[0.0028541666666666667,0.0028541666666666667,0.0028541666666666667]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-packetsLost": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[0,0,0]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-localId": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[\"RTCOutboundRTPAudioStream_3563195499\",\"RTCOutboundRTPAudioStream_3563195499\",\"RTCOutboundRTPAudioStream_3563195499\"]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-roundTripTime": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[0.002,0.002,0.002]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-fractionLost": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[0,0,0]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-totalRoundTripTime": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[0.007,0.007,0.007]"
+    },
+    "RTCRemoteInboundRtpAudioStream_3563195499-roundTripTimeMeasurements": {
+     "startTime": "2021-06-23T13:27:47.395Z",
+     "endTime": "2021-06-23T13:27:47.395Z",
+     "values": "[4,4,4]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-ssrc": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[\"343568987\",\"343568987\",\"343568987\"]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-kind": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-transportId": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-codecId": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[\"RTCCodec_1_Outbound_98\",\"RTCCodec_1_Outbound_98\",\"RTCCodec_1_Outbound_98\"]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-jitter": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[0.023644444444444444,0.023644444444444444,0.023177777777777776]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-packetsLost": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[0,0,0]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-localId": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[\"RTCOutboundRTPVideoStream_343568987\",\"RTCOutboundRTPVideoStream_343568987\",\"RTCOutboundRTPVideoStream_343568987\"]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-roundTripTime": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[0.002,0.002,0.002]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-fractionLost": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[0,0,0]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-totalRoundTripTime": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[0.052,0.052,0.054]"
+    },
+    "RTCRemoteInboundRtpVideoStream_343568987-roundTripTimeMeasurements": {
+     "startTime": "2021-06-23T13:27:51.011Z",
+     "endTime": "2021-06-23T13:27:52.467Z",
+     "values": "[26,26,27]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-ssrc": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"482208104\",\"482208104\",\"482208104\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-kind": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"audio\",\"audio\",\"audio\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-transportId": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"RTCTransport_0_1\",\"RTCTransport_0_1\",\"RTCTransport_0_1\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-codecId": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"RTCCodec_0_Inbound_111\",\"RTCCodec_0_Inbound_111\",\"RTCCodec_0_Inbound_111\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-packetsSent": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[1087,1242,1242]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-bytesSent": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[88127,100682,100682]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-localId": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"RTCInboundRTPAudioStream_482208104\",\"RTCInboundRTPAudioStream_482208104\",\"RTCInboundRTPAudioStream_482208104\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-remoteTimestamp": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[1624454868648,1624454871747,1624454871747]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-[remoteTimestamp]": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[\"23/06/2021, 16:27:48\",\"23/06/2021, 16:27:51\",\"23/06/2021, 16:27:51\"]"
+    },
+    "RTCRemoteOutboundRTPAudioStream_482208104-reportsSent": {
+     "startTime": "2021-06-23T13:27:48.650Z",
+     "endTime": "2021-06-23T13:27:51.749Z",
+     "values": "[7,8,8]"
+    },
+    "RTCTransport_0_1-bytesSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6000032,6227206,6449648]"
+    },
+    "RTCTransport_0_1-[bytesSent_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,2259889.907901423,1778975.709922598]"
+    },
+    "RTCTransport_0_1-packetsSent": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6954,7205,7459]"
+    },
+    "RTCTransport_0_1-bytesReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[6252322,6401888,6721715]"
+    },
+    "RTCTransport_0_1-[bytesReceived_in_bits/s]": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[0,1487858.1790397854,2557810.4151977357]"
+    },
+    "RTCTransport_0_1-packetsReceived": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[7273,7463,7801]"
+    },
+    "RTCTransport_0_1-dtlsState": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"connected\",\"connected\",\"connected\"]"
+    },
+    "RTCTransport_0_1-selectedCandidatePairId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCIceCandidatePair_rNlXiCIT_I6jXuisY\",\"RTCIceCandidatePair_rNlXiCIT_I6jXuisY\",\"RTCIceCandidatePair_rNlXiCIT_I6jXuisY\"]"
+    },
+    "RTCTransport_0_1-localCertificateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\",\"RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\",\"RTCCertificate_F8:46:CF:71:69:67:5F:95:12:4E:21:89:6E:57:C4:5D:27:7B:A2:E4:9E:37:36:0E:79:D1:31:44:A1:FF:D8:8B\"]"
+    },
+    "RTCTransport_0_1-remoteCertificateId": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\",\"RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\",\"RTCCertificate_C9:1A:FB:FA:0E:D3:19:93:2A:1A:88:17:00:C0:40:B5:24:F0:59:4B:FC:06:F3:24:1B:3E:E8:41:BB:E3:F0:C5\"]"
+    },
+    "RTCTransport_0_1-tlsVersion": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"FEFD\",\"FEFD\",\"FEFD\"]"
+    },
+    "RTCTransport_0_1-dtlsCipher": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\",\"TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\",\"TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\"]"
+    },
+    "RTCTransport_0_1-srtpCipher": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"AES_CM_128_HMAC_SHA1_80\",\"AES_CM_128_HMAC_SHA1_80\",\"AES_CM_128_HMAC_SHA1_80\"]"
+    },
+    "RTCTransport_0_1-selectedCandidatePairChanges": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[2,2,2]"
+    },
+    "RTCVideoSource_2-trackIdentifier": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"459076d0-3c67-4240-83ac-89c552a8c543\",\"459076d0-3c67-4240-83ac-89c552a8c543\",\"459076d0-3c67-4240-83ac-89c552a8c543\"]"
+    },
+    "RTCVideoSource_2-kind": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[\"video\",\"video\",\"video\"]"
+    },
+    "RTCVideoSource_2-width": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[1280,1280,1280]"
+    },
+    "RTCVideoSource_2-height": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[720,720,720]"
+    },
+    "RTCVideoSource_2-frames": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[738,763,791]"
+    },
+    "RTCVideoSource_2-framesPerSecond": {
+     "startTime": "2021-06-23T13:27:51.570Z",
+     "endTime": "2021-06-23T13:27:53.374Z",
+     "values": "[29,31,28]"
+    }
+   },
+   "updateLog": [],
+   "url": "https://appr.tc/r/7142567610683807629"
+  }
+ },
+ "UserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+}

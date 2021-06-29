@@ -1,0 +1,315 @@
+
+{
+    "name": "MAC_op_76-MAC_op_76 (2021-06-23-154153) - 8",
+    "start": 1624452116041,
+    "stop": 1624452182218,
+    "description": "MAC_op_76-MAC_op_76 (2021-06-23-154153)",
+    "stage": "finished",
+    "status": "FAILED",
+    "parameters": [
+    ],
+    "steps": [
+        {
+            "name": "Filling out reports, handling payload, creating runners..",
+            "start": 1624452113855,
+            "stop": 1624452116017,
+            "description": "Filling out reports, handling payload, creating runners..",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "unknown(no Web Driver): Initiate webDriver for client",
+            "start": 1624452113856,
+            "stop": 1624452116008,
+            "description": "Initiate webDriver for client",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "unknown(no Web Driver): Initiate webDriver for client",
+            "start": 1624452113856,
+            "stop": 1624452116015,
+            "description": "Initiate webDriver for client",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-a6150 - 1: Open apprtc web page and join a room",
+            "start": 1624452116041,
+            "stop": 1624452117514,
+            "description": "Open apprtc web page and join a room",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-52418 - 0: Open apprtc web page and join a room",
+            "start": 1624452116028,
+            "stop": 1624452117541,
+            "description": "Open apprtc web page and join a room",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-52418 - 0: Verify that the ICE connection state is 'connected'",
+            "start": 1624452117541,
+            "stop": 1624452179642,
+            "description": "Verify that the ICE connection state is 'connected'",
+            "stage": "finished",
+            "status": "FAILED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "name": "error_screenshot_PeerConnectionCheck",
+                    "type": "image/png",
+                    "source": "467a7c39-6ece-40dd-8226-6cddba5ecdb0-attachment.png"
+                },
+                {
+                    "name": "error.log",
+                    "type": "text/json",
+                    "source": "8a19bf6b-bb93-4b1a-9f4f-e8dda9072ab2-attachment.json"
+                }
+            ],
+            "statusDetails": {
+                "known": true,
+                "muted": false,
+                "flaky": false,
+                "message": "Could not verify the ICE connection's state after 60000ms\r\n",
+                "trace": "io.cosmosoftware.kite.exception.KiteTestException: Could not verify the ICE connection's state after 60000ms\r\n\n\tat org.webrtc.kite.apprtc.checks.PeerConnectionCheck.step(PeerConnectionCheck.java:52)\n\tat io.cosmosoftware.kite.steps.TestStep.execute(TestStep.java:81)\n\tat io.cosmosoftware.kite.steps.TestStep.processTestStep(TestStep.java:329)\n\tat org.webrtc.kite.tests.TestRunner.call(TestRunner.java:187)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+            }
+        },
+        {
+            "name": "op91_MAC-52418 - 0: Verify that the remote video is actually playing",
+            "start": 1624452179642,
+            "stop": 1624452179642,
+            "description": "Verify that the remote video is actually playing",
+            "stage": "finished",
+            "status": "SKIPPED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-52418 - 0: Getting stats from [\"appController.call_.pcClient_.pc_\"]",
+            "start": 1624452179642,
+            "stop": 1624452179643,
+            "description": "Getting stats from [\"appController.call_.pcClient_.pc_\"]",
+            "stage": "finished",
+            "status": "SKIPPED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-a6150 - 1: Verify that the ICE connection state is 'connected'",
+            "start": 1624452117514,
+            "stop": 1624452182218,
+            "description": "Verify that the ICE connection state is 'connected'",
+            "stage": "finished",
+            "status": "FAILED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "name": "error_screenshot_PeerConnectionCheck",
+                    "type": "image/png",
+                    "source": "4aeceb7d-2527-4719-b31b-51398136ff1f-attachment.png"
+                },
+                {
+                    "name": "error.log",
+                    "type": "text/json",
+                    "source": "0220ba79-2af1-4052-b6a4-5e10d3ed48df-attachment.json"
+                }
+            ],
+            "statusDetails": {
+                "known": true,
+                "muted": false,
+                "flaky": false,
+                "message": "Could not verify the ICE connection's state after 60000ms\r\n",
+                "trace": "io.cosmosoftware.kite.exception.KiteTestException: Could not verify the ICE connection's state after 60000ms\r\n\n\tat org.webrtc.kite.apprtc.checks.PeerConnectionCheck.step(PeerConnectionCheck.java:52)\n\tat io.cosmosoftware.kite.steps.TestStep.execute(TestStep.java:81)\n\tat io.cosmosoftware.kite.steps.TestStep.processTestStep(TestStep.java:329)\n\tat org.webrtc.kite.tests.TestRunner.call(TestRunner.java:187)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+            }
+        },
+        {
+            "name": "op91_MAC-a6150 - 1: Verify that the remote video is actually playing",
+            "start": 1624452182218,
+            "stop": 1624452182218,
+            "description": "Verify that the remote video is actually playing",
+            "stage": "finished",
+            "status": "SKIPPED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "op91_MAC-a6150 - 1: Getting stats from [\"appController.call_.pcClient_.pc_\"]",
+            "start": 1624452182218,
+            "stop": 1624452182218,
+            "description": "Getting stats from [\"appController.call_.pcClient_.pc_\"]",
+            "stage": "finished",
+            "status": "SKIPPED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        },
+        {
+            "name": "Cleaning up and finishing the test",
+            "start": 1624452182219,
+            "stop": 1624452182425,
+            "description": "Cleaning up and finishing the test",
+            "stage": "finished",
+            "status": "PASSED",
+            "parameters": [
+            ],
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "The test has passed successfully!"
+            }
+        }
+    ],
+    "attachments": [
+    ],
+    "statusDetails": {
+        "known": true,
+        "muted": false,
+        "flaky": false,
+        "message": "Could not verify the ICE connection's state after 60000ms\r\n",
+        "trace": "io.cosmosoftware.kite.exception.KiteTestException: Could not verify the ICE connection's state after 60000ms\r\n\n\tat org.webrtc.kite.apprtc.checks.PeerConnectionCheck.step(PeerConnectionCheck.java:52)\n\tat io.cosmosoftware.kite.steps.TestStep.execute(TestStep.java:81)\n\tat io.cosmosoftware.kite.steps.TestStep.processTestStep(TestStep.java:329)\n\tat org.webrtc.kite.tests.TestRunner.call(TestRunner.java:187)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+    },
+    "uuid": "cd96a499-d0ee-4560-9a28-a81d4dacc8c5",
+    "fullName": "org.webrtc.kite.apprtc.tests.IceConnectionTest",
+    "historyId": "55aec5ca-deb3-480d-a736-312ece423829",
+    "links": [
+    ],
+    "labels": [
+        {
+            "name": "package",
+            "value": "package org.webrtc.kite.apprtc.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "class org.webrtc.kite.apprtc.tests.IceConnectionTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "execute"
+        },
+        {
+            "name": "host",
+            "value": "192.168.1.12"
+        },
+        {
+            "name": "suite",
+            "value": "IceConnectionTest  (2021-06-23-153710)"
+        },
+        {
+            "name": "parentSuite",
+            "value": "WebRTC-eval Test Chrome [2021-06-23-153709]"
+        }
+    ]
+}
